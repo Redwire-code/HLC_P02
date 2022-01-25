@@ -1,0 +1,602 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+
+
+/*CSS Común a todas las páginas*/
+
+*{
+  font-family: Lato, Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #2e2e2e;
+  
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  width: 100%;  
+}
+
+
+/*HEADER Style*/
+
+header{
+  width: 100%;
+
+}
+
+header img{
+  float: right;
+  margin-top: 15px;
+}
+
+
+header img:hover{
+  transition-duration: 0.6s;
+  transform: scale(1.3);
+}
+
+header h2{
+  font-size: 1.7rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+  margin-left: -26px;
+}
+
+
+
+/*NAV Style*/
+
+/*
+  Ocultamos todos los 
+  enlaces del menú excepto el primero (enlace de regresar a casa)
+*/
+
+.menu a {
+  text-decoration: none;
+  color: #2e2e2e;
+  visibility: hidden;
+
+}
+
+a:first-child {
+  visibility: visible;
+
+}
+
+/*Estilo a aplicar en los input que sean tipo checkbox
+contenidos en el menu*/
+.menu input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+/*------------------------------------*
+  Menú
+\*------------------------------------*/
+.menu {
+  position: absolute;
+  left: 0;
+  margin-top: -32px;
+  top: 0;
+  display: flex;
+  flex-direction: column; /*los enlaces los establecemos en columna (verticalmente)*/
+  align-items: flex-start; /*alineación  al eje secundario*/
+
+}
+
+/*------------------------------------*
+  Items del menú
+\*------------------------------------*/
+
+
+/*estilo para los enlaces*/
+.menu__item {
+  
+  display: flex;
+  /*justify-content: center; centrar contenido*/
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.5rem;
+              /*propiedad que se modificará*/
+  transition: background-color 0.2s; /*tiempo que transcurrirá*/
+  font-size: 17px;
+  margin-top: 1px;
+  margin-left: -7.6px;
+  
+}
+
+
+/*
+  Estilo concreto de cada hijo de menu__item, o lo que es lo mismo, cada enlace
+
+  Para cada enlace le estableceremos un ancho concreto, un fondo concreto
+  y lo estableceré en visible
+  
+  Ajustaremos de nuevo sus propiedades insertando contenido detrás del tag
+  html, en este caso <a></a>
+  (after)
+
+  :hover es una pseudoclase mientras que ::after es un pseudoelemento ya existente en
+  CSS2.
+
+  Con :hover especificamos qué hacer en caso de que el ratón se posicione encima del elemento
+  html.
+
+  Con ::after insertamos contenido detrás de un elemento html y con ::before realizamos lo
+  mismo pero delante de un elemento html.
+
+  Este mismo proceso se sigue con cada enlace del menú.
+
+  Se han usado las pseudoclases nth-child una a una ya que cada enlace
+  tendrá una anchura menor (efecto pirámide) y un fondo ligeramente más oscuro.
+  
+  Este mismo paso se repite con cada enlace
+*/
+
+
+.menu__item:nth-child(2) {
+  width: 13.26rem;  
+  background-color: #67e89b;
+  visibility: visible;
+}
+.menu__item:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 0;
+  border: 1.2rem solid #67e89b;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  transition: border 0.2s;
+  visibility: visible;
+}
+
+.menu__item:nth-child(2):hover {
+  background-color: #2ddf75;
+}
+.menu__item:nth-child(2):hover::after {
+  border: 1.2rem solid #2ddf75;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+}
+
+
+
+.menu__item:nth-child(3) {
+  width: 10.88rem;
+  background-color: #5fd992;
+  visibility: visible;
+}
+.menu__item:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 0;
+  border: 1.2rem solid #5fd992;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  transition: border 0.2s;
+  visibility: visible;
+}
+.menu__item:nth-child(3):hover {
+  background-color: #30ca70;
+}
+.menu__item:nth-child(3):hover::after {
+  border: 1.2rem solid #30ca70;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+}
+
+
+.menu__item:nth-child(4) {
+  width: 8.5rem;
+  background-color: #58c988;
+  visibility: visible;
+}
+.menu__item:nth-child(4)::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 0;
+  border: 1.2rem solid #58c988;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  transition: border 0.2s;
+  visibility: visible;
+}
+.menu__item:nth-child(4):hover {
+  background-color: #38af6b;
+}
+.menu__item:nth-child(4):hover::after {
+  border: 1.2rem solid #38af6b;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+}
+
+
+.menu__item:nth-child(5) {
+  width: 6.1rem;
+  background-color: #52ba7d;
+  visibility: visible;
+}
+.menu__item:nth-child(5)::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 0;
+  border: 1.2rem solid #52ba7d;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  transition: border 0.2s;
+  visibility: visible;
+}
+.menu__item:nth-child(5):hover {
+  background-color: #3d9963;
+}
+.menu__item:nth-child(5):hover::after {
+  border: 1.2rem solid #3d9963;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  
+}
+
+
+
+.menu__item:nth-child(6) {
+  width: 3.78rem;
+  background-color: #4eaf70;
+  visibility: visible;
+}
+.menu__item:nth-child(6)::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 100%;
+  top: 0;
+  border: 1.2rem solid #4eaf70;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  transition: border 0.2s;
+  visibility: visible;
+}
+.menu__item:nth-child(6):hover {
+  background-color: #338e58;
+}
+.menu__item:nth-child(6):hover::after {
+  border: 1.2rem solid #338e58;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid transparent;
+  
+}
+
+
+/*------------------------------------*
+  Botón cerrar del menú
+\*------------------------------------*/
+
+.menu__close {
+  
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  width: 5rem;
+  height:  5rem;
+
+  
+}
+
+
+.menu__close{
+  margin-top: 1px;
+  margin-left: -7.6px;
+}
+
+.menu__close::before {
+  position: absolute;
+  content: "";
+  top: 0.9rem;
+  left: 0.9rem;
+  z-index: 1;
+}
+
+.menu__close::after {
+  position: absolute;
+  content: "";
+  width: 12;
+  height: 0;
+  border: 2.4rem solid #459c69;
+  border-right: 2.4rem solid transparent;
+  border-bottom: 2.4rem solid transparent;
+  transition: border 0.2s;
+}
+
+
+
+
+.menu__close:hover::after {
+  border: 2.4rem solid #2b824f;
+  border-right: 2.4rem solid transparent;
+  border-bottom: 2.4rem solid transparent;
+}
+
+input[type=checkbox]:checked ~ .menu__item:nth-child(2) {
+  transition: transform 0.3s 0.3s, background-color 0.2s;
+  transform: translateX(calc(-100% -   3.4rem)) !important;
+}
+
+input[type=checkbox]:checked ~ .menu__item:nth-child(3) {
+  transition: transform 0.3s 0.2s, background-color 0.2s;
+  transform: translateX(calc(-100% -   3.4rem)) !important;
+}
+
+input[type=checkbox]:checked ~ .menu__item:nth-child(4) {
+  transition: transform 0.3s 0.1s, background-color 0.2s;
+  transform: translateX(calc(-100% -   3.4rem)) !important;
+}
+
+input[type=checkbox]:checked ~ .menu__item:nth-child(5) {
+  transition: transform 0.3s 0s, background-color 0.2s;
+  transform: translateX(calc(-100% -   3.4rem)) !important;
+}
+
+
+input[type=checkbox]:checked ~ .menu__item:nth-child(6) {
+  transition: transform 0.3s 0s, background-color 0.2s;
+  transform: translateX(calc(-100% -   3.4rem)) !important;
+}
+
+
+input[type=checkbox]:checked ~ .menu__close {
+  transition: transform 0.3s 0.3s, background-color 0.2s;
+  transform: translateY(-11.9rem) !important;
+  
+}
+
+
+
+
+input[type=checkbox]:checked ~ .menu__close::before {
+  content: "";
+
+}
+input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(2) {
+  transition: transform 0.3s 0.1s, background-color 0.2s;
+  transform: translateX(0) !important;
+}
+input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(3) {
+  transition: transform 0.3s 0.2s, background-color 0.2s;
+  transform: translateX(0) !important;
+}
+input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(4) {
+  transition: transform 0.3s 0.3s, background-color 0.2s;
+  transform: translateX(0) !important;
+}
+input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(5) {
+  transition: transform 0.3s 0.4s, background-color 0.2s;
+  transform: translateX(0) !important;
+}
+
+input[type=checkbox]:not(:checked) ~ .menu__item:nth-child(6) {
+  transition: transform 0.3s 0.5s, background-color 0.2s;
+  transform: translateX(0) !important;
+}
+
+input[type=checkbox]:not(:checked) ~ .menu__close {
+  transition: transform 0.3s 0.1s, background-color 0.2s;
+  transform: translateY(0) !important;
+
+
+}
+
+
+
+/*Footer style*/
+
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  clear: both;
+  color: #2e2e2e;
+  background-color: #459c69;
+
+}
+
+footer ul{
+  list-style-type: none;
+  list-style-image: url(../images/row.png);
+  padding-bottom: 15px;
+
+}
+
+footer article{
+  padding-left: 12px;
+}
+
+.pfooter{
+  padding-top: 4px;
+  margin-left: 30px;
+  margin-bottom: 29px;
+}
+
+
+.pfooter+a{
+  margin-left: 30px;
+
+}
+
+
+.last ul{
+  width: 110px;
+  background-color: #000;
+}
+
+.last li{
+
+  display: inline-block;
+}
+
+
+
+.last div{
+  margin-left: 30px;
+  background-color: #2e2e2e;
+  padding: 5px;
+  width: 225px;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.last div img{
+  margin-right:  13px;
+}
+
+
+/*SECTION style*/
+
+
+.subpagesSection{
+    width: 80%;
+    float: right;
+
+     color: #2e2e2e;
+}
+
+.subpagesSection article{
+    padding: 15px;
+    background-color: #c0c0c0;
+    margin-bottom: 15px;
+    border-radius: 12px;
+
+  border-style: inset;
+  border-color: #459c69;
+  border-width: 4px;
+}
+
+.subpagesSection h2{
+  background-color: #459c69;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  font-weight: 500;
+  
+  
+}
+
+
+
+.subpagesSection h4{
+  background-color: #38af6b;
+    padding: 4px;
+    border-radius: 3px;
+    font-weight: 300;
+    width: 40%;
+    margin-left: 30%;
+}
+
+
+li{
+  list-style-type: none;
+}
+
+.subPagesTable{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-collapse: collapse;
+
+}
+
+
+.subPagesTable tr{
+  border-style: inset;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #459c69;
+  border-right-color: #408757;
+  border-width: 5px;
+}
+
+.tableTitle{
+  padding-top: 3px;
+  padding-bottom: 12px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.subPagesTable td{
+
+  padding-right: 15px;
+}
+
+.row:nth-child(even){
+  background-color: #bbbbbb;
+}
+
+.row:nth-child(odd){
+  background-color: #a5a5a5;
+}
+
+
+
+
+.subpageContent{
+  margin-left: 10%;
+  text-align: center;
+  margin-right: 10%;
+}
+
+.subpagesSection h3{
+    background-color: #38af6b;
+    padding: 4px;
+    border-radius: 3px;
+    font-weight: 300;
+    width: 50%;
+
+    margin-left: 25%;
+}
+
+
+
+/*ASIDE style*/
+
+
+aside{
+  width: 18.4%;
+  background-color: #c0c0c0;
+  position: fixed;
+  border-radius:12px ;
+  color: #2e2e2e;
+  border-style: inset;
+  border-color: #459c69;
+  border-width: 4px;
+
+}
+
+
+
+
+

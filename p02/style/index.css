@@ -1,0 +1,73 @@
+
+/*
+__________________________________________
+  CSS Propio index.html
+__________________________________________
+*/
+
+.content{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.contentTable{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.contentTable td{
+  padding-right:   7px;  
+}
+
+.indexSection{
+  
+  width: 100%;
+  color: #2e2e2e;
+  margin-bottom: 12px;
+
+}
+
+.indexSection article{
+  padding: 15px;
+  background-color: #c0c0c0;
+  margin-bottom: 15px;
+  border-radius: 12px;
+
+}
+
+
+
+.content h3{
+  width: 50%;
+  margin-left: 25%;
+  background-color: #38af6b;
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.indexSection h2{
+  margin-left: 100px;
+  margin-right:  100px;
+  background-color: #459c69;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+
+
+
+/*Carousel*/
+
+.carousel button{
+  background-color: #2e2e2e;
+  border-color: transparent;
+}
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Main page</title>
+	<link rel="icon" type="image/x-icon" href="./images/mainIcon.ico">
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+</head>
+<body>
+
+	
+
+	<header>
+		
+		<h1>JLearn</h1>	
+		
+	</header>
+	
+	<nav class="menu">
+  		<input id="menu__button" type="checkbox" checked />
+  		<a class="menu__item" href="./bootstrap.html">Bootstrap</a>
+  		<a class="menu__item" href="./angular.html">AngularJS</a>
+  		<a class="menu__item" href="./express.html">ExpressJS</a>
+  		<a class="menu__item" href="./JQuery.html">JQuery</a>
+  		<a class="menu__item" href="./javaScript.html">JS</a>
+  		<label class="menu__close" for="menu__button"></label>
+	</nav>
+
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="./js/carousel.js"></script>
+
+	<div class="carousel">
+		<div class="container__carousel">
+			
+			<button aria-label="Previous" class="carousel__previous"><img src="./images/left.png" alt="left row"/></button>
+
+				<div class="items__carousel">
+					<div class="element__carousel">
+						<img alt="Element number 1" src="./images/bootstrapCarousel.png" />
+						<p>Bootstrap</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 2" src="./images/angularCarousel.png" />
+						<p>Angular</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 3" src="./images/expressCarousel.png" />
+						<p>Express</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 4" src="./images/jqueryCarousel.png" />
+						<p>JQuery</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 5" src="./images/html5Carousel.png" />
+						<p>HTML5</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 6" src="./images/css3Carousel.png" />
+						<p>CSS3</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 7" src="./images/JavascriptCarousel.png" />
+						<p>Java Script</p>
+					</div>
+					<div class="element__carousel">
+						<img alt="Element number 8" src="./images/responsiveCarousel.png" />
+						<p>Responsive</p>
+					</div>
+				</div>
+
+			<button aria-label ="Next" class="carousel__next"><img src="./images/right.png" alt="right row"/></button>
+		</div>
+
+		<div role="tablist" class="indic"></div>
+		
+	</div>
+
+	<section class="indexSection">
+		
+	</section>
+
+	<section class="indexSection">
+		<article>
+			<h2>Content in this webpage</h2>
+			<div class="content">
+				
+			</div>
+		</article>
+
+		<article>
+			<h2>About us</h2>
+			<div class="content">
+				<p>We are two students of cross-platform application development, this page contains tutorials about Bootstrap, AngularJS, ExpressJS, JQuery and Javascript. Our objetive in this practice is learn more about JavaScript and frameworks like Bootstrap and JQuery.</p>
+
+			</div>
+		</article>
+
+		<article>
+			<h2>Our Accounts</h2>
+			<div class="content">
+				<h3>Github</h3>
+				<p>If you want to see our Github projects or repositories you can visit our Github accounts by the following links </p>
+				<table class="contentTable">
+					<tr>
+						<td>Antonio's Github Account</td>
+						<td><a title="ACG Github Account" target="_blank" href="https://github.com/Redwire-code"><img src="./images/githubLogo.png" alt="ACG Github Account"/></a></td>
+					</tr>
+					<tr>
+						<td>Francisco's Github Account</td>
+						<td><a title="FMM Github Account" target="_blank" href="https://github.com/gorrionrojo"><img src="./images/githubLogo.png" alt="FMM Github Account"/></a></td>
+					</tr>
+				</table>
+				<h3>Mail</h3>
+				<p>You can contact with each one of we sending an email at the following email address</p>
+				<table class="contentTable">
+					<tr>
+						<td>Antonio's Email Account</td>
+						<td><a title="Mail to Antonio" target="_blank" href="mailto: acargar1002@g.educaand.es"><img src="./images/mail.png" alt="ACG Github Account"/></a></td>
+					</tr>
+					<tr>
+						<td>Francisco's Email Account</td>
+						<td><a title="Mail to Francisco" target="_blank" href="#"><img src="./images/mail.png" alt="FMM Github Account"/></a></td>
+					</tr>
+				</table>
+			</div>
+		</article>
+	</section>
+
+	<footer>
+		<article>
+			<h3>Developed by:</h3>
+			<ul>
+				<li>Francisco Javier Martínez Martínez</li>
+				<li>Antonio Carrasco García</li>
+			</ul>
+		</article>	
+		<article>
+			<p class="pfooter">This webpage is under a Creative Commons License</p>
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC page" target="_blank"><img src="./images/license.png" alt="Creative Commons license" /></a>
+		</article>
+		<article class="last">
+			<p class="pfooter">This webpage uses the following technologies</p>
+			<div>
+				<img src="./images/html5.svg" alt="HTML5  image" />
+				<img src="./images/css3.svg" alt="CSS3  image" />
+				<img src="./images/javaScript.svg" alt="JS  image" />
+				<img src="./images/bootstrap.svg" alt="Bootstrap image" />
+				<img src="./images/JQuery.svg" alt="Bootstrap image" />
+			</div>
+		</article>
+	</footer>
+
+</body>
+</html>
