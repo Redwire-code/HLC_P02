@@ -10,20 +10,18 @@
 
 	<header>
 		<a href="./index.html" title="Return to main page"><img src="./images/home.png" alt="return to main page image"/></a>
-		<h1>JLearn</h1>	
+		<h1 id="MAIN">JLearn</h1>	
 			
 		<h2>JavaScript</h2>
 	</header>
 
 
 	<aside>
-		<ul>
-			<li>a</li>
-			<li>a</li>
-			<li>a</li>
-			
-			<li>a</li>
-			<li>a</li>
+		<h2>Content</h2>
+		<ul class="sectionListAside">
+			<li><a href="#WJS">What it's JavaScript?</a></li>
+			<li><a href="#JSDT">JavaScript Datatypes</a></li>
+			<li><a href="#JSSYNTAX">JavaScript Syntax</a></li>
 		</ul>
 	</aside>
 	
@@ -42,10 +40,9 @@
 
 	<section class="subpagesSection">
 
-		<article>
+		<article id="WJS">
 			<h2>What it's JavaScript?</h2>
 			<div class="subpageContent">
-				
 				<p>
 					JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
 				</p>
@@ -94,13 +91,416 @@
 				</table>
 
 			</div>
+			<button class="upButton"><a href="#MAIN" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
-		<article>
+		<article id="JSDT">
+			<h2>JavaScript Datatypes</h2>
+			<div class="subpageContent">
+				<p>In programming, data types is an important concept.</p>
+				<p>To be able to operate on variables, it is important to know something about the type.</p>
+				<p>Without data types, a computer cannot safely solve this:</p>
+				<p>JavaScript variables can hold different data types: numbers, strings, objects and more:</p>
+
+				<div class="code">
+					<p> let length = 16;                               // Number</p>
+					<p> let lastName = "Johnson";                      // String</p>
+					<p> let x = {firstName:"John", lastName:"Doe"};    // Object </p>
+				</div>
+
+				<h3>Handling with data types</h3>
+
+				<p>For example, let's see the following code</p>
+
+				<div class="code">
+					<p>let x = 16 + "JS"; </p>
+				</div>
+
+				<p>Does it make any sense to add "JS" to sixteen? Will it produce an error or will it produce a result?</p>
+				<p>JavaScript will treat the example above as:</p>
+
+				<div class="code">
+					<p>let x = "16" + "JS"; </p>
+				</div>
+
+				<p class="conclussion">Conclussion: If you add a number and a string JavaScript will treat the number as a string.</p>
+
+				<p>Let's see another interesting example of JavaScript code.</p>
+
+				<div class="code">
+					<p>let x = 16 + 4 + "JS"; </p>
+				</div>
+
+				<p>Result</p>
+
+				<div class="code">
+					<p>20JS</p>
+				</div>
+
+				<p class="conclussion">Conclussion: if you add two or more numbers at first and then add a string, JavaScript will sum the numbers and will add it to the string</p>
+
+				<p>But... If we try the previous example but adding the numbers at last?</p>
+
+				<div class="code">
+					<p>let x = "JS"+ 16 + 4 ; </p>
+				</div>
+
+				<p>In this case, the result will be the following</p>
+
+
+				<div class="code">
+					<p>JS164</p>
+				</div>
+
+				<p class="conclussion">Conclussion: if the first operand is a string, all operands are treated as strings.</p>
+
+				<h3>JavaScript types are Dynamic</h3>
+
+				<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+
+
+				<div class="code">
+					<p>let x;           // Now x is undefined</p>
+					<p>x =105;           // Now x is a Number</p>
+					<p>x = "Slade Wilson";      // Now x is a String </p>
+				</div>
+
+
+				<h3>String</h3>
+				<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+				<div class="code">
+					<p>let a1 = " It's alright ";             // Single quote inside double quotes</p>
+					<p>let a2 = " He is called 'Slade' ";    // Single quotes inside double quotes</p>
+					<p>let a3 = ' He is called "Slade" ';    // Double quotes inside single quotes </p>
+				</div>
+
+				<h3>Numbers</h3>
+
+				<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+				<div class="code">
+					<p>let a = 568e5; //56800000</p>
+					<p>let b = 568e-5 //0.00568</p>
+				</div>
+
+
+				<h3>Boolean</h3>
+				<p>Booleans can only have two values: true or false</p>
+
+				<div class="code">
+					<p>let a = 8;</p>
+					<p>let c = 1;</p>
+					<p>( a != c ) //Returns true</p>
+					<p>( a == c ) //Returns false</p>
+				</div>
+				<p>Booleans are often used in conditional testing.</p>
+
+				<h3>Arrays</h3>
+				<p>JavaScript arrays are written with square brackets.</p>
+				<p>Array items are separated by commas.</p>
+
+				<div class="code">
+					<p>const villains = [ " Deathstroke ", " Scarecrow " , " Black Manta " ];</p>
+				</div>
+
+				<p>Array indexes are zero-based, which means the first item is [0], second is [1], and so on.</p>
+
+				<h3>Objects</h3>
+
+				<p>JavaScript objects are written with curly braces {}.</p>
+				<p>Object properties are written as name:value pairs, separated by commas.</p>
+
+				<div class="code">
+					<p> const person = {firstName:"Slade", lastName:"Wilson", age:40, eyeColor:"brown"};</p>
+				</div>
+
+			</div>
+
+			<button class="upButton"><a href="#MAIN" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
+		</article>
+
+		<article id="JSSYNTAX">
 			<h2>JavaScript Syntax</h2>
 			<div class="subpageContent">
+				<p>JavaScript syntax is the set of rules, how JavaScript programs are constructed.</p>
+				<h3>Create Variables</h3>
+				<p>Variables are containers for storing data (storing data values).</p>
+				<p>There are 4 Ways to Declare a JavaScript Variable: </p>
 				
+				<ul class="sectionList">
+					<li>Using var</li>
+					<li>Using let</li>
+					<li>Using const</li>
+					<li>Using nothing</li>
+				</ul>
+
+				<h4>Using var</h4>
+				<div class="code">
+					<p>var firstNumber = 10;</p>
+					<p>var secondNumber = 8;</p>
+					<p>var result = firstNumber * secondNumber;</p>
+				</div>
+
+				<h4>Using let</h4>
+				<div class="code">
+					<p>let firstNumber = 10;</p>
+					<p>let secondNumber = 8;</p>
+					<p>let result = firstNumber * secondNumber;</p>
+				</div>
+
+				<h4>Using const</h4>
+
+				<p>In this case, const is a constant so his value will never change</p>
+
+				<div class="code">
+					<p>const PI = 3.14159;</p>
+				</div>
+
+				<h4>Using nothing</h4>
+
+				<div class="code">
+					<p>firstNumber = 10;</p>
+					<p>secondNumber = 8;</p>		
+					<p>result = firstNumber * secondNumber;</p>
+				</div>
+
+				<h3>JavaScript Values</h3>
+				<p>The JavaScript syntax defines two types of values:</p>
+				<ul class="sectionList">
+					<li>Fixed values</li>
+					<li>Variable values</li>
+				</ul>
+				<p>Fixed values are called Literals.Variable values are called Variables.</p>
+				<h4>Fixed values</h4>
+				<p>Numbers, written with or without decimals</p>
+				
+				<div class="code">
+					<p>	70.23</p>
+					<p>	1000</p>
+				</div>
+
+				<h4>Variable values</h4>
+				<p>Strings, written within double or single quotes</p>
+
+				<div class="code">
+					<p>'JavaScript'</p>
+					<p>"JavaScript"</p>
+				</div>
+
+				<h3>Operators</h3>
+				<h4>Arithmetic operators</h4>
+				<p>JavaScript uses arithmetic operators ( + - * / ) to compute values: </p>
+
+				<div class="code">
+					<p>var result = (12 - 8) * (3 + 5 ) / 16; </p>
+				</div>
+
+				<p>Arithmetics operators summary</p>
+
+				<table class="subPagesTable">
+					<tr>
+						<th class = "tableTitle">Operator</th>
+						<th class = "tableTitle">Description</th>
+					</tr>
+
+					<tr class="row">
+						<td>+</td>
+						<td>Addition</td>
+					</tr>
+
+
+					<tr class="row">
+						<td>-</td>
+						<td>Substraction</td>
+					</tr>
+
+
+					<tr class="row">
+						<td>*</td>
+						<td>Multiplication</td>
+					</tr>
+
+
+					<tr class="row">
+						<td>**</td>
+						<td>Exponentiation</td>
+					</tr>
+
+					<tr class="row">
+						<td>/</td>
+						<td>Division</td>
+					</tr>
+
+
+					<tr class="row">
+						<td>%</td>
+						<td>Modulus (Division Remainder)</td>
+					</tr>
+
+					<tr class="row">
+						<td>++</td>
+						<td>Increment</td>
+					</tr>
+
+					<tr class="row">
+						<td>--</td>
+						<td>Decrement</td>
+					</tr>
+
+					
+					
+				</table>
+
+				<h4>Assignment Operators</h4>
+
+				<p>Assignment Operators summary</p>
+
+				<table class="subPagesTable">
+					<tr>
+						<th class="tableTitle">Operator</th>
+						<th class="tableTitle">Example</th>
+						<th class="tableTitle">Same as</th>
+					</tr>
+					<tr class="row">
+						<td>=</td>
+						<td>x = y</td>
+						<td>x = y</td>
+					</tr>
+					<tr class="row">
+						<td>+=</td>
+						<td>x += y</td>
+						<td>x = x + y</td>
+					</tr>
+					<tr class="row">
+						<td>-=</td>
+						<td>x -= y</td>
+						<td>x = x - y</td>
+					</tr>
+					<tr class="row">
+						<td>*=</td>
+						<td>x *= y</td>
+						<td>x = x * y</td>
+					</tr>
+					<tr class="row">
+						<td>/=</td>
+						<td>x /= y</td>
+						<td>x = x / y</td>
+					</tr>
+					<tr class="row">
+						<td>%=</td>
+						<td>x %= y</td>
+						<td>x = x % y</td>
+					</tr>
+					<tr class="row">
+						<td>**=</td>
+						<td>x **= y</td>
+						<td>x = x ** y</td>
+					</tr>
+					
+				</table>
+
+				<h4> Comparison Operators</h4>
+
+				<p>Comparison Operators summary</p>
+
+				<table class="subPagesTable">
+					<tr>
+						<th class="tableTitle">Operator</th>
+						<th class="tableTitle">Description</th>
+					</tr>
+					<tr class="row">
+						<td>==</td>
+						<td>Equal to</td>
+					</tr>
+					<tr class="row">
+						<td>===</td>
+						<td>Equal values and equal type</td>
+					</tr>
+					<tr class="row">
+						<td>!=</td>
+						<td>Not equal</td>
+					</tr>
+					<tr class="row">
+						<td>!==</td>
+						<td>Not equal values or not equal type</td>
+					</tr>
+					<tr class="row">
+						<td>></td>
+						<td>Greater than</td>
+					</tr>
+					<tr class="row">
+						<td><</td>
+						<td>Less than</td>
+					</tr>
+					<tr class="row">
+						<td>>=</td>
+						<td>Greater than or equal to</td>
+					</tr>
+					<tr class="row">
+						<td><=</td>
+						<td>Less than or equal to</td>
+					</tr>
+					<tr class="row">
+						<td>?</td>
+						<td>Ternary operator</td>
+					</tr>
+				</table>
+
+				<h4>Logical Operators</h4>
+				<p>Logical Operators summary</p>
+
+				<table class="subPagesTable">
+					<tr>
+						<th class="tableTitle">Operator</th>
+						<th class="tableTitle">Description</th>
+					</tr>
+					<tr class="row">
+						<td>&&</td>
+						<td>Logical and</td>
+					</tr>
+					<tr class="row">
+						<td>||</td>
+						<td>Logical or</td>
+					</tr>
+					<tr class="row">
+						<td>!</td>
+						<td>Logical not</td>
+					</tr>
+				</table>
+
+				<h3>Comments</h3>
+				<p>In JavaScript there are two types of comments // and /**/</p>
+				<p>With double slashes we will comment one line</p>
+				<p>With /**/ we will comment as lines as we can</p>
+
+				<div class="code">
+					<p>//One line comment</p>
+					<p>/*</p>
+					<p>Many lines</p>
+					<p>comment</p>
+					<p>*/</p>
+				</div>
+
+				<h3>JavaScript Identifiers</h3>
+				<p>Identifiers are JavaScript names.</p> 
+				<p>Identifiers are used to name variables and keywords, and functions.</p> 
+				<p>The rules for legal names are the same in most programming languages.</p>
+
+				<p>A JavaScript name must begin with:</p>
+
+				<ul class="sectionList">
+					<li>A letter (A-Z or a-z)</li>
+    				<li>A dollar sign ($)</li>
+    				<li>Or an underscore (_)</li>
+				</ul>
+
+				<p>Subsequent characters may be letters, digits, underscores, or dollar signs.</p>
+				<p>Numbers are not allowed as the first character in names.</p>
+				<p>This way JavaScript can easily distinguish identifiers from numbers.</p>
+
 			</div>
+			<button class="upButton"><a href="#MAIN" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 		
 	</section>
@@ -108,18 +508,18 @@
 
 	<footer>	
 		<article>
-			<h3>Developed by:</h3>
+			<h3>Website Developed by:</h3>
 			<ul>
 				<li>Francisco Javier Martínez Martínez</li>
 				<li>Antonio Carrasco García</li>
 			</ul>
 		</article>	
 		<article>
-			<p class="pfooter">This webpage is under a Creative Commons License</p>
+			<p class="pfooter">This website is under a Creative Commons License</p>
 			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC page" target="_blank"><img src="./images/license.png" alt="Creative Commons license" /></a>
 		</article>
 		<article class="last">
-			<p class="pfooter">This webpage uses the following technologies</p>
+			<p class="pfooter">This website uses the following technologies</p>
 			<div>
 				<img src="./images/html5.svg" alt="HTML5  image" />
 				<img src="./images/css3.svg" alt="CSS3  image" />

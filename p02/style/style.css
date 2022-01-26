@@ -18,7 +18,8 @@ h1 {
   font-weight: 300;
   text-align: center;
   color: #fff;
-  width: 100%;  
+  width: 90%;  
+  margin-left: 10%;
 }
 
 
@@ -30,8 +31,9 @@ header{
 }
 
 header img{
-  float: right;
-  margin-top: 15px;
+  float: left;
+  margin-left: 90%;
+  position: fixed;
 }
 
 
@@ -44,8 +46,9 @@ header h2{
   font-size: 1.7rem;
   text-align: center;
   color: #fff;
+  width: 90%;
   font-weight: 200;
-  margin-left: -26px;
+  margin-left: 10%;
 }
 
 
@@ -80,9 +83,10 @@ contenidos en el menu*/
   Menú
 \*------------------------------------*/
 .menu {
-  position: absolute;
+  position: fixed;
   left: 0;
-  margin-top: -32px;
+  margin-left: 10px;
+  height: 0;
   top: 0;
   display: flex;
   flex-direction: column; /*los enlaces los establecemos en columna (verticalmente)*/
@@ -476,10 +480,9 @@ footer article{
 
 
 .subpagesSection{
-    width: 80%;
+    width: 70%;
     float: right;
-
-     color: #2e2e2e;
+    color: #2e2e2e;
 }
 
 .subpagesSection article{
@@ -487,10 +490,9 @@ footer article{
     background-color: #c0c0c0;
     margin-bottom: 15px;
     border-radius: 12px;
-
-  border-style: inset;
-  border-color: #459c69;
-  border-width: 4px;
+    border-style: inset;
+    border-color: #459c69;
+    border-width: 4px;
 }
 
 .subpagesSection h2{
@@ -506,7 +508,12 @@ footer article{
   
 }
 
+.subpageContent > p{
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
 
+}
 
 .subpagesSection h4{
   background-color: #38af6b;
@@ -527,6 +534,7 @@ li{
   justify-content: center;
   flex-wrap: wrap;
   border-collapse: collapse;
+  text-align: center;
 
 }
 
@@ -543,9 +551,13 @@ li{
 .tableTitle{
   padding-top: 3px;
   padding-bottom: 12px;
-  background-color: #fff;
+  background-color: #459c69;
   text-align: center;
+  font-weight: 300;
+
 }
+
+
 
 .subPagesTable td{
 
@@ -563,7 +575,7 @@ li{
 
 
 
-.subpageContent{
+.subpageContent > h3,h2,h4{
   margin-left: 10%;
   text-align: center;
   margin-right: 10%;
@@ -575,17 +587,53 @@ li{
     border-radius: 3px;
     font-weight: 300;
     width: 50%;
-
     margin-left: 25%;
 }
 
+.sectionList{
+  list-style-image: url(../images/row.png);
 
+}
+
+.sectionList li{
+  text-align: left;
+  width: 20%;
+  margin-left: 36%;
+ 
+}
+
+.conclussion{
+
+  text-decoration: underline;
+  
+  text-decoration-color: #459c69;
+
+
+}
+
+.upButton{
+  background-color: #c0c0c0;
+  border-color: transparent;
+}
+
+.code{
+  margin-left: 25%;
+  text-align: left;
+  width: 50%;
+  font-size: 0.97em;
+  padding: 3px;
+  background-color: #2e2e2e;
+  border-radius: 6px;
+  color: #c0c0c0;
+
+}
 
 /*ASIDE style*/
 
 
 aside{
-  width: 18.4%;
+  width: 29%;
+  float: left;
   background-color: #c0c0c0;
   position: fixed;
   border-radius:12px ;
@@ -593,9 +641,28 @@ aside{
   border-style: inset;
   border-color: #459c69;
   border-width: 4px;
+  
+}
+
+.sectionListAside{
+  list-style-image: url(../images/row.png);
+  margin-left: 5%;
+  margin-right:  5%;
+
+
 
 }
 
+.sectionListAside li{
+  margin-left: 4%;
+  margin-right:  4%;
+  
+}
+
+.sectionListAside li a{
+  text-decoration: none;
+  color: #2e2e2e;
+}
 
 
 
