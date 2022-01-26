@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Angular</title>
+	<link rel="icon" type="image/x-icon" href="./images/mainIcon.ico">
+	<link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+	<header>
+		<a href="./index.html" title="Return to main page"><img src="./images/home.png" alt="return to main page image"/></a>
+		<h1 id="MAIN">JLearn</h1>	
+			
+		<h2>Angular</h2>
+	</header>
+
+
+	<aside>
+		<h2>Content</h2>
+		<ul class="sectionListAside">
+			<li><a href="#1">What is Angular?</a></li>
+			<li><a href="#2">AngularJS Expressions</a></li>
+			<li><a href="#3">AngularJS Numbers</a></li>
+			<li><a href="#4">AngularJS Strings</a></li>
+			<li><a href="#5">AngularJS Objects</a></li>
+			<li><a href="#6">AngularJS Arrays</a></li>
+			<li><a href="#7">AngularJS Expressions vs. JavaScript Expressions</a></li>
+			<li><a href="#8">AngularJS Modules</a></li>
+			<li><a href="#9">Creating a Module</a></li>
+			<li><a href="#10">Adding a Controller</a></li>
+			<li><a href="#11">Adding a Directive</a></li>
+		</ul>
+	</aside>
+	
+	<nav class="menu">
+  		<input id="menu__button" type="checkbox" checked />
+  		<a class="menu__item" href="./bootstrap.html">Bootstrap</a>
+  		<a class="menu__item" href="./angular.html">AngularJS</a>
+  		<a class="menu__item" href="./express.html">ExpressJS</a>
+  		<a class="menu__item" href="./JQuery.html">JQuery</a>
+  		<a class="menu__item" href="./javaScript.html">JS</a>
+  		<label class="menu__close" for="menu__button"></label>
+	</nav>
+
+	<section class="subpagesSection">
+
+		<article id=1>
+			<h2>What is Angular?</h2>
+			<div class="subpageContent">
+				<p>
+					Angular is an open source framework developed by Google to facilitate the creation and programming of single page web applications, the SPA (Single Page Application) websites.
+				</p>
+
+				<p>
+					Angular completely separates the frontend and backend in the application, avoids writing repetitive code and keeps everything more organized thanks to its MVC (Model-View-Controller) pattern, ensuring rapid development, while allowing modifications and updates.
+				</p>
+
+				<p>
+					In a SPA website, although the loading speed can be a bit slow the first time it is opened, browsing afterwards is totally instantaneous, since the entire page has been loaded at once.
+				</p>
+
+			</div>
+		</article>	
+
+		<article id=2>
+			<h2>AngularJS Expressions</h2>
+			<div class="subpageContent">
+				<p>
+					AngularJS expressions can be written inside double braces: <span class="resaltado">{{ expression }}.</span>
+				</p>
+				<p>
+					AngularJS expressions can also be written inside a directive: <span class="resaltado">ng-bind="expression".</span>
+				</p>
+				<p>
+					AngularJS will resolve the expression, and return the result exactly where the expression is written.
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< !DOCTYPE html> </p>
+					<p>< html> </p>
+					<p>< script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/<br/>angular.min.js">< /script></p>
+					<p>< body></p>
+					<p>< div ng-app=""></p>
+					<p>< p>My first expression: {{ 5 + 5 }}</p></p>
+					<p>< /div></p>
+					<p>< /body></p>
+					<p>< /html></p>
+				</div>
+				<p>If you remove the ng-app directive, HTML will display the expression as it is, without solving it:</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< !DOCTYPE html></p>
+					<p>< html></p>
+					<p>< script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/<br/>angular.min.js">< /script></p>
+					<p>< body></p>
+					<p>< div></p>
+					<p>< p>My first expression: {{ 5 + 5 }}< /p></p>
+					<p>< /div></p>
+					<p>< /body></p>
+					<p>< /html></p>
+				</div>
+			</div>
+		</article>
+
+		<article id=3>
+			<h2>AngularJS Numbers</h2>
+			<div class="subpageContent">
+				<p>
+					AngularJS numbers are like JavaScript numbers:
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="quantity=1;cost=5"></p>
+					<p>< p>Total in dollar: {{ quantity * cost }}< /p></p>
+					<p>< /div></p>
+				</div>
+				<p>
+					Same example using <span class="resaltado">ng-bind:</span>
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="quantity=1;cost=5"></p>
+					<p>< p>Total in dollar: < span ng-bind="quantity * cost">< /span>< /p></p>
+					<p>< /div></p>
+				</div>
+			</div>
+
+		</article>
+
+		<article id=4>
+			<h2>AngularJS Strings</h2>
+			<div class="subpageContent">
+				<p>
+					AngularJS strings are like JavaScript strings:
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="firstName='John';lastName='Doe'"></p>
+					<p>< p>The name is {{ firstName + " " + lastName }}< /p></p>
+					<p>< /div></p>
+				</div>
+				<p>
+					Same example using <span class="resaltado">ng-bind:</span>
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="firstName='John';lastName='Doe'"></p>
+					<p>< p>The name is < span ng-bind="firstName + ' ' + lastName">< /span>< /p></p>
+					<p>< /div></p>
+				</div>
+			</div>
+		</article>
+
+		<article id=5>
+			<h2>AngularJS Objects</h2>
+			<div class="subpageContent">
+				<p>
+					AngularJS objects are like JavaScript objects:
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="person={firstName:'John'<br/>,lastName:'Doe'}"></p>
+					<p>< p>The name is {{ person.lastName }}< /p></p>
+					<p>< /div></p>
+				</div>
+				<p>
+					Same example using <span class="resaltado">ng-bind:</span>
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="person={firstName:'John'<br/>,lastName:'Doe'}"></p>
+					<p>< p>The name is < span ng-bind="person.lastName">< /span>< /p></p>
+					<p>< /div></p>
+				</div>
+			</div>
+		</article>
+
+		<article id=6>
+			<h2>AngularJS Arrays</h2>
+			<div class="subpageContent">
+				<p>
+					AngularJS arrays are like JavaScript arrays:
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="points=[1,15,19,2,40]"></p>
+					<p>< p>The third result is {{ points[2] }}< /p></p>
+					<p>< /div></p>
+				</div>
+				<p>
+					Same example using <span class="resaltado">ng-bind:</span>
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="" ng-init="points=[1,15,19,2,40]"></p>
+					<p>< p>The third result is < span ng-bind="points[2]">< /span>< /p></p>
+					<p>< /div></p>
+				</div>
+			</div>
+		</article>
+
+		<article id=7>
+			<h2>AngularJS Expressions vs. JavaScript Expressions</h2>
+			<div class="subpageContent">
+				<p>Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.</p>
+				<p>Unlike JavaScript expressions, AngularJS expressions can be written inside HTML.</p>
+				<p>AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.</p>
+				<p>AngularJS expressions support filters, while JavaScript expressions do not.</p>
+				<p>Learn about JavaScript in our JavaScript Tutorial.</p>
+			</div>
+		</article>
+
+		<article id=8>
+			<h2>AngularJS Modules</h2>
+			<div class="subpageContent">
+				<p>An AngularJS module defines an application.</p>
+				<p>The module is a container for the different parts of an application.</p>
+				<p>The module is a container for the application controllers.</p>
+				<p>Controllers always belong to a module.</p>
+			</div>
+		</article>
+
+		<article id=9>
+			<h2>Creating a Module</h2>
+			<div class="subpageContent">
+				<p>A module is created by using the AngularJS function <span class="resaltado">angular.module</span></p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="myApp">...< /div></p>
+					<p>< script></p>
+					<p>var app = angular.module("myApp", []);</p>
+					<p>< /script></p>
+				</div>
+				<p>
+					The "myApp" parameter refers to an HTML element in which the application will run.
+				</p>
+				<p>
+					Now you can add controllers, directives, filters, and more, to your AngularJS application.
+				</p>
+			</div>
+		</article>
+
+		<article id=10>
+			<h2>Adding a Controller</h2>
+			<div class="subpageContent">
+				<p>Add a controller to your application, and refer to the controller with the <span class="resaltado">ng-controller</span> directive:</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="myApp" ng-controller="myCtrl"></p>
+					<p>{{ firstName + " " + lastName }}</p>
+					<p>< /div></p>
+					<p>< script></p>
+					<p>var app = angular.module("myApp", []);</p>
+					<p>app.controller("myCtrl", function($scope) {</p>
+					<p>$scope.firstName = "John";</p>
+					<p>$scope.lastName = "Doe";</p>
+					<p>});</p>
+					<p>< /script></p>
+				</div>
+			</div>
+		</article>
+
+		<article id=11>
+			<h2>Adding a Directive</h2>
+			<div class="subpageContent">
+				<p>AngularJS has a set of built-in directives which you can use to add functionality to your application.</p>
+				<p>For a full reference, visit our AngularJS directive reference.</p>
+				<p>In addition you can use the module to add your own directives to your applications:</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>< div ng-app="myApp" w3-test-directive>< /div></p>
+					<p>< script></p>
+					<p>var app = angular.module("myApp", []);</p>
+					<p>app.directive("w3TestDirective", function() {</p>
+					<p>return {</p>
+					<p>template : "I was made in a directive constructor!"};</p>
+					<p>});</p>
+					<p>< /script></p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+
+	<footer>	
+		<article>
+			<h3>Website Developed by:</h3>
+			<ul>
+				<li>Francisco Javier Martínez Martínez</li>
+				<li>Antonio Carrasco García</li>
+			</ul>
+		</article>	
+		<article>
+			<p class="pfooter">This website is under a Creative Commons License</p>
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC page" target="_blank"><img src="./images/license.png" alt="Creative Commons license" /></a>
+		</article>
+		<article class="last">
+			<p class="pfooter">This website uses the following technologies</p>
+			<div>
+				<img src="./images/html5.svg" alt="HTML5  image" />
+				<img src="./images/css3.svg" alt="CSS3  image" />
+				<img src="./images/javaScript.svg" alt="JS  image" />
+				<img src="./images/bootstrap.svg" alt="Bootstrap image" />
+				<img src="./images/JQuery.svg" alt="Bootstrap image" />
+			</div>
+		</article>
+	</footer>
+
+</body>
+
+</html>
