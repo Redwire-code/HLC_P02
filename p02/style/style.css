@@ -1,11 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 /*CSS Común a todas las páginas*/
 
 *{
-  font-family: Lato, Arial, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 body {
@@ -92,6 +92,7 @@ contenidos en el menu*/
   flex-direction: column; /*los enlaces los establecemos en columna (verticalmente)*/
   align-items: flex-start; /*alineación  al eje secundario*/
 
+
 }
 
 /*------------------------------------*
@@ -111,6 +112,7 @@ contenidos en el menu*/
   transition: background-color 0.2s; /*tiempo que transcurrirá*/
   font-size: 17px;
   margin-top: 1px;
+
   margin-left: -7.6px;
   
 }
@@ -575,7 +577,7 @@ li{
 
 
 
-.subpageContent > h3,h2,h4{
+.subpageContent > h1,h3,h2,h4{
   margin-left: 10%;
   text-align: center;
   margin-right: 10%;
@@ -616,16 +618,78 @@ li{
   border-color: transparent;
 }
 
+
+
+
 .code{
   margin-left: 25%;
   text-align: left;
   width: 50%;
   font-size: 0.97em;
   padding: 3px;
-  background-color: #2e2e2e;
+  background-color: #23272e;
   border-radius: 6px;
-  color: #c0c0c0;
+}
 
+
+.subpageContent img{
+  width: 15%;
+  margin-left: 42.5%;
+}
+
+.code h5{
+  color: #2e2e2e;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 45%;
+  border-radius: 3px;
+  background: #38af6b;
+
+}
+
+
+
+.operator{
+  color:#56b6c2;
+}
+
+.stringValue{
+  color: #98b752;
+}
+
+.numericValue{
+  color: #d19a66;
+}
+
+.comment{
+  color: #aaaaaa;
+}
+
+.semicolonAndMore{
+  color: #c7c8c7;
+}
+
+.constkeyword{
+  color: #e5a347;
+}
+
+.keyword{
+  color: #a778dd;
+}
+
+.variableName{
+  color:#e06150;
+}
+
+.contentAside{
+  background: -moz-radial-gradient(circle, rgba(69,156,96,1) 0%, rgba(133,247,150,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(69,156,96,1) 0%, rgba(133,247,150,1) 100%);
+  background: radial-gradient(circle, rgba(69,156,96,1) 0%, rgba(133,247,150,1) 100%);
+  opacity: 0.7;
+  border-radius: 12px;
 }
 
 /*ASIDE style*/

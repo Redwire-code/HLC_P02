@@ -65,9 +65,69 @@ __________________________________________
 
 /*Carousel*/
 
+.carousel{
+  width: 90%;
+  margin-left:5%;
+}
+
+.carousel__previous,
+.carousel__next{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border:none;
+  top: calc(50% - 15px);
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;
+  background: none;
+  opacity: 0.5;
+}
+
+.carousel__previous,
+.carousel__next:hover{
+  opacity: 1;
+}
+
+.indic .glider-dot{
+  display: block;
+  width:30px ;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 0;
+
+}
+
+.indic .glider-dot:hover{
+  opacity:.5;
+}
+
+.indic .glider-dot.active{
+  opacity: 1;
+}
+
+
+.items__carousel{
+  overflow: hidden;
+}
+
+.carousel__next{
+  right:-30px;
+}
+
+.carousel__previous{
+  left: -26px;
+}
+
 .carousel button{
   background-color: #2e2e2e;
   border-color: transparent;
+}
+
+.container__carousel{
+  position: relative;
+
 }
 
 

@@ -17,7 +17,7 @@
 
 
 	<aside>
-		<h2>Content</h2>
+		<h2 class="contentAside">Content</h2>
 		<ul class="sectionListAside">
 			<li><a href="#WJS">What it's JavaScript?</a></li>
 			<li><a href="#JSDT">JavaScript Datatypes</a></li>
@@ -46,7 +46,18 @@
 				<p>
 					JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
 				</p>
+				<p>
+					JavaScript is the dominant client-side scripting language of the Web, with 97% of websites using it for this purpose. Scripts are embedded in or included from HTML documents and interact with the DOM. All major web browsers have a built-in JavaScript engine that executes the code on the user's device.
+				</p>
+				
+				<p>
+					Over 80% of websites use a third-party JavaScript library or web framework for their client-side scripting.
 
+					jQuery is by far the most popular library, used by over 75% of websites. Facebook created the React library for its website and later released it as open source; other sites, including Twitter, now use it. Likewise, the Angular framework created by Google for its websites, including YouTube and Gmail, is now an open source project used by others.
+
+					In contrast, the term "Vanilla JS" has been coined for websites not using any libraries or frameworks, instead relying entirely on standard JavaScript functionality.
+				</p>
+				<img src="./images/jsLogo.png">
 				<h3>JavaScript features</h3>
 
 				<p>
@@ -54,6 +65,7 @@
 				</p>
 
 				<p>Now, i'll list some features of JavaScript differentiating by advantages and disadvantages.</p>
+
 
 				<h4>JavaScript Advantages and Disadvantages</h4>	
 				
@@ -103,9 +115,11 @@
 				<p>JavaScript variables can hold different data types: numbers, strings, objects and more:</p>
 
 				<div class="code">
-					<p> let length = 16;                               // Number</p>
-					<p> let lastName = "Johnson";                      // String</p>
-					<p> let x = {firstName:"John", lastName:"Doe"};    // Object </p>
+					<h5>Javascript example Code</h5>
+					<p> &nbsp; &nbsp; &nbsp; <span class="keyword">let</span>&nbsp; <span class="variableName">length</span> <span class="operator">=</span> <span class="numericValue">16</span><span class="semicolonAndMore">;</span> <span class="comment">// Number</span></p>
+
+					<p> &nbsp; &nbsp; &nbsp; <span class="keyword">let</span>&nbsp; <span class="variableName">lastName</span> <span class="operator">=</span> <span class="stringValue">"Johnson"</span> <span class="semicolonAndMore">;</span>   <span class="comment">// String</span></p>
+					<p> &nbsp; &nbsp; &nbsp; <span class="keyword">let</span>&nbsp; <span class="variableName">x</span> <span class="operator">=</span> <span class="semicolonAndMore">{</span><span class="variableName">firstName</span><span class="semicolonAndMore">:</span> <span class="stringValue">"John"</span> <span class="semicolonAndMore">,</span> <span class="variableName">lastName</span><span class="semicolonAndMore">:</span> <span class="stringValue">"Doe"</span> <span class="semicolonAndMore">};</span>  <span class="comment">// Object</span> </p>
 				</div>
 
 				<h3>Handling with data types</h3>
@@ -113,14 +127,16 @@
 				<p>For example, let's see the following code</p>
 
 				<div class="code">
-					<p>let x = 16 + "JS"; </p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword">let</span> <span class="variableName">x</span> <span class="operator">=</span> <span class="numericValue">16</span> <span class="operator">+</span> <span class="stringValue">"JS"</span> <span class="semicolonAndMore">;</span> </p>
 				</div>
 
 				<p>Does it make any sense to add "JS" to sixteen? Will it produce an error or will it produce a result?</p>
 				<p>JavaScript will treat the example above as:</p>
 
 				<div class="code">
-					<p>let x = "16" + "JS"; </p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword">let</span> <span class="variableName">x</span> <span class="operator">=</span> <span class="numericValue">"16"</span> <span class="operator">+</span> <span class="stringValue">"JS"</span> <span class="semicolonAndMore">;</span> </p>
 				</div>
 
 				<p class="conclussion">Conclussion: If you add a number and a string JavaScript will treat the number as a string.</p>
@@ -128,13 +144,15 @@
 				<p>Let's see another interesting example of JavaScript code.</p>
 
 				<div class="code">
-					<p>let x = 16 + 4 + "JS"; </p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword">let</span> <span class="variableName">x</span> <span class="operator">=</span> <span class="numericValue">16</span> <span class="operator">+</span>  <span class="numericValue">4</span> <span class="operator">+</span> <span class="stringValue">"JS"</span> <span class="semicolonAndMore">;</span> </p>
 				</div>
 
 				<p>Result</p>
 
 				<div class="code">
-					<p>20JS</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="semicolonAndMore">20JS</span></p>
 				</div>
 
 				<p class="conclussion">Conclussion: if you add two or more numbers at first and then add a string, JavaScript will sum the numbers and will add it to the string</p>
@@ -142,14 +160,16 @@
 				<p>But... If we try the previous example but adding the numbers at last?</p>
 
 				<div class="code">
-					<p>let x = "JS"+ 16 + 4 ; </p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword">let</span> <span class="variableName">x</span> <span class="operator">=</span>  <span class="stringValue">"JS"</span><span class="operator">+</span>  <span class="numericValue">16</span> <span class="operator">+</span>  <span class="numericValue">4</span> <span class="semicolonAndMore">;</span> </p>
 				</div>
 
 				<p>In this case, the result will be the following</p>
 
 
 				<div class="code">
-					<p>JS164</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="semicolonAndMore">JS164</span></p>
 				</div>
 
 				<p class="conclussion">Conclussion: if the first operand is a string, all operands are treated as strings.</p>
@@ -160,9 +180,11 @@
 
 
 				<div class="code">
-					<p>let x;           // Now x is undefined</p>
-					<p>x =105;           // Now x is a Number</p>
-					<p>x = "Slade Wilson";      // Now x is a String </p>
+					<h5>Javascript example Code</h5>
+					
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span> <span class="variableName">x</span> <span class="semicolonAndMore">;</span> <span class="comment"> // Now x is undefined</span></p>
+					<p>&nbsp; &nbsp; &nbsp; <span class="variableName">x</span> <span class="operator">=</span> <span class="numericValue">105</span><span class="semicolonAndMore">;</span><span class="comment"> // Now x is a Number</span></p>
+					<p>&nbsp; &nbsp; &nbsp; <span class="variableName">x</span>  <span class="operator">=</span> <span class="stringValue">"Slade Wilson"</span> <span class="semicolonAndMore">;</span> <span class="comment">// Now x is a String</span> </p>
 				</div>
 
 
@@ -170,9 +192,10 @@
 				<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
 
 				<div class="code">
-					<p>let a1 = " It's alright ";             // Single quote inside double quotes</p>
-					<p>let a2 = " He is called 'Slade' ";    // Single quotes inside double quotes</p>
-					<p>let a3 = ' He is called "Slade" ';    // Double quotes inside single quotes </p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span> <span class="variableName">a1</span> <span class="operator">=</span> <span class="stringValue">" It's alright "</span> <span class="semicolonAndMore">;</span> <span class="comment"> //Single quote inside double quotes </span></p>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span>  <span class="variableName">a2</span> <span class="operator"> =</span> <span class="stringValue"> " He is called 'Slade' "</span> <span class="semicolonAndMore">;</span> <span class="comment">// Single quotes inside double quotes</span></p>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span>  <span class="variableName">a2</span> <span class="operator"> =</span> <span class="stringValue"> ' He is called "Slade" '</span> <span class="semicolonAndMore">;</span> <span class="comment">// Double quotes inside single quotes</span></p>
 				</div>
 
 				<h3>Numbers</h3>
@@ -180,8 +203,9 @@
 				<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
 
 				<div class="code">
-					<p>let a = 568e5; //56800000</p>
-					<p>let b = 568e-5 //0.00568</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword"> let </span>  <span class="variableName">a</span> <span class="operator">=</span>  <span class="numericValue">568e5</span> <span class="semicolonAndMore">;</span> <span class="comment">//56800000</span></p>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword"> let </span>  <span class="variableName">b</span> <span class="operator">=</span>  <span class="numericValue">568e-5</span> <span class="semicolonAndMore">;</span> <span class="comment">//0.00568</span></p>
 				</div>
 
 
@@ -189,10 +213,11 @@
 				<p>Booleans can only have two values: true or false</p>
 
 				<div class="code">
-					<p>let a = 8;</p>
-					<p>let c = 1;</p>
-					<p>( a != c ) //Returns true</p>
-					<p>( a == c ) //Returns false</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span> <span class="variableName">a</span> <span class="operator">=</span> <span class="numericValue">8</span> <span class="semicolonAndMore">;</span></p>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span> <span class="variableName">c</span> <span class="operator">=</span> <span class="numericValue">1</span> <span class="semicolonAndMore">;</span></p>
+					<p>&nbsp; &nbsp; &nbsp; <span class="operator">(</span> <span class="variableName">a</span> <span class="operator">!=</span> <span class="variableName">c</span> <span class="operator">)</span> <span class="comment">//Returns true</span></p>
+						<p>&nbsp; &nbsp; &nbsp; <span class="operator">(</span> <span class="variableName">a</span> <span class="operator">==</span> <span class="variableName">c</span> <span class="operator">)</span> <span class="comment">//Returns false</span></p>
 				</div>
 				<p>Booleans are often used in conditional testing.</p>
 
@@ -201,7 +226,8 @@
 				<p>Array items are separated by commas.</p>
 
 				<div class="code">
-					<p>const villains = [ " Deathstroke ", " Scarecrow " , " Black Manta " ];</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">const</span> <span class="constkeyword">villains</span> <span class="operator"> = </span> <span class="semicolonAndMore">[</span> <span class="stringValue">" Deathstroke "</span> <span class="semicolonAndMore">,</span> <span class="stringValue">" Scarecrow "</span> <span class="semicolonAndMore"> ,</span> <span class="stringValue">" Black Manta "</span>  <span class="semicolonAndMore">]</span> <span class="semicolonAndMore">;</span></p>
 				</div>
 
 				<p>Array indexes are zero-based, which means the first item is [0], second is [1], and so on.</p>
@@ -212,7 +238,8 @@
 				<p>Object properties are written as name:value pairs, separated by commas.</p>
 
 				<div class="code">
-					<p> const person = {firstName:"Slade", lastName:"Wilson", age:40, eyeColor:"brown"};</p>
+					<h5>Javascript example Code</h5>
+					<p> &nbsp; &nbsp; &nbsp; <span class="keyword">const</span> <span class="constkeyword">person</span> <span class="operator">=</span> <span class="semicolonAndMore">{</span> <span class="variableName">firstName</span><span class="semicolonAndMore">:</span> <span class="stringValue">"Slade"</span> <span class="semicolonAndMore">,</span> <span class="variableName">lastName</span> <span class="semicolonAndMore">:</span> <span class="stringValue">"Wilson"</span> <span>,</span> <span class="variableName">age</span> <span>:</span> <span class="numericValue">40</span><span class="semicolonAndMore">,</span> <span class="variableName">eyeColor</span> <span class="semicolonAndMore">:</span> <span class="stringValue">"brown"</span> <span class="semicolonAndMore"> }</span> <span class="semicolonAndMore"> ;</span></p>
 				</div>
 
 			</div>
@@ -237,16 +264,18 @@
 
 				<h4>Using var</h4>
 				<div class="code">
-					<p>var firstNumber = 10;</p>
-					<p>var secondNumber = 8;</p>
-					<p>var result = firstNumber * secondNumber;</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">var</span>  <span class="variableName">firstNumber</span> <span class="operator">=</span>  <span class="numericValue">10</span> <span class="semicolonAndMore">;</span></p>
+						<p>&nbsp; &nbsp; &nbsp; <span class="keyword">var</span>  <span class="variableName">secondNumber</span> <span class="operator">=</span>  <span class="numericValue">8</span> <span class="semicolonAndMore">;</span></p>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword"> var</span>  <span class="variableName">result</span> <span class="operator">=</span> <span class="variableName">firstNumber</span> <span class="operator"> *</span> <span class="variableName">secondNumber</span> <span class="semicolonAndMore"> ;</span></p>
 				</div>
 
 				<h4>Using let</h4>
 				<div class="code">
-					<p>let firstNumber = 10;</p>
-					<p>let secondNumber = 8;</p>
-					<p>let result = firstNumber * secondNumber;</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span>  <span class="variableName">firstNumber</span> <span class="operator">=</span>  <span class="numericValue">10</span> <span class="semicolonAndMore">;</span></p>
+						<p>&nbsp; &nbsp; &nbsp; <span class="keyword">let</span>  <span class="variableName">secondNumber</span> <span class="operator">=</span>  <span class="numericValue">8</span> <span class="semicolonAndMore">;</span></p>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword"> let</span>  <span class="variableName">result</span> <span class="operator">=</span> <span class="variableName">firstNumber</span> <span class="operator"> *</span> <span class="variableName">secondNumber</span> <span class="semicolonAndMore"> ;</span></p>
 				</div>
 
 				<h4>Using const</h4>
@@ -254,15 +283,17 @@
 				<p>In this case, const is a constant so his value will never change</p>
 
 				<div class="code">
-					<p>const PI = 3.14159;</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp; <span class="keyword">const</span> <span class="constkeyword">PI</span> <span class="operator">=</span> <span class="numericValue">3.14159</span><span class="semicolonAndMore">;</span></p>
 				</div>
 
 				<h4>Using nothing</h4>
 
 				<div class="code">
-					<p>firstNumber = 10;</p>
-					<p>secondNumber = 8;</p>		
-					<p>result = firstNumber * secondNumber;</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;   <span class="variableName">firstNumber</span> <span class="operator">=</span>  <span class="numericValue">10</span> <span class="semicolonAndMore">;</span></p>
+						<p>&nbsp; &nbsp; &nbsp;  <span class="variableName">secondNumber</span> <span class="operator">=</span>  <span class="numericValue">8</span> <span class="semicolonAndMore">;</span></p>
+					<p>&nbsp; &nbsp; &nbsp;  <span class="variableName">result</span> <span class="operator">=</span> <span class="variableName">firstNumber</span> <span class="operator"> *</span> <span class="variableName">secondNumber</span> <span class="semicolonAndMore"> ;</span></p>
 				</div>
 
 				<h3>JavaScript Values</h3>
@@ -276,16 +307,18 @@
 				<p>Numbers, written with or without decimals</p>
 				
 				<div class="code">
-					<p>	70.23</p>
-					<p>	1000</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;	<span class="numericValue">70.23</span></p>
+					<p>&nbsp; &nbsp; &nbsp;	<span class="numericValue">1000</span></p>
 				</div>
 
 				<h4>Variable values</h4>
 				<p>Strings, written within double or single quotes</p>
 
 				<div class="code">
-					<p>'JavaScript'</p>
-					<p>"JavaScript"</p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="stringValue">'JavaScript'</span></p>
+					<p>&nbsp; &nbsp; &nbsp;<span class="stringValue">"JavaScript"</span></p>
 				</div>
 
 				<h3>Operators</h3>
@@ -293,7 +326,8 @@
 				<p>JavaScript uses arithmetic operators ( + - * / ) to compute values: </p>
 
 				<div class="code">
-					<p>var result = (12 - 8) * (3 + 5 ) / 16; </p>
+					<h5>Javascript example Code</h5>
+					<p>&nbsp; &nbsp; &nbsp;<span class="keyword">var</span> <span class="variableName">result</span> <span class="operator"> =</span> <span class="operator">(</span> <span class="numericValue">12</span>  <span class="operator">-</span>  <span class="numericValue">8</span> <span class="operator">)</span> <span class="operator">*</span> <span class="operator">(</span><span class="numericValue">3</span> <span class="operator">+</span> <span class="numericValue">5</span> <span class="operator">)</span> <span class="operator">/</span> <span class="numericValue">16</span><span class="semicolonAndMore">;</span> </p>
 				</div>
 
 				<p>Arithmetics operators summary</p>
@@ -475,11 +509,12 @@
 				<p>With /**/ we will comment as lines as we can</p>
 
 				<div class="code">
-					<p>//One line comment</p>
-					<p>/*</p>
-					<p>Many lines</p>
-					<p>comment</p>
-					<p>*/</p>
+					<h5>Javascript example Code</h5>
+					<p class="comment">&nbsp; &nbsp; &nbsp;//One line comment</p>
+					<p class="comment">&nbsp; &nbsp; &nbsp;/*</p>
+					<p class="comment">&nbsp; &nbsp; &nbsp;Many lines</p>
+					<p class="comment">&nbsp; &nbsp; &nbsp;comment</p>
+					<p class="comment">&nbsp; &nbsp; &nbsp;*/</p>
 				</div>
 
 				<h3>JavaScript Identifiers</h3>
@@ -508,7 +543,7 @@
 
 	<footer>	
 		<article>
-			<h3>Website Developed by:</h3>
+			<h3>Page Developed by:</h3>
 			<ul>
 				<li>Francisco Javier Martínez Martínez</li>
 				<li>Antonio Carrasco García</li>
