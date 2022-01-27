@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Main page</title>
+	<link rel="icon" type="image/x-icon" href="./images/mainIcon.ico">
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+</head>
+<body>
+
+	
+
+	<header>
+		<a href="./index.html" title="Return to main page"><img src="./images/home.png" alt="return to main page image"/></a>
+		<h1>JLearn</h1>	
+		<h2>Subscribe</h2>
+		
+	</header>
+	
+	<nav class="menu">
+  		<input id="menu__button" type="checkbox" checked />
+  		<a class="menu__item" href="./bootstrap.html">Bootstrap</a>
+  		<a class="menu__item" href="./angular.html">AngularJS</a>
+  		<a class="menu__item" href="./express.html">ExpressJS</a>
+  		<a class="menu__item" href="./JQuery.html">JQuery</a>
+  		<a class="menu__item" href="./javaScript.html">JS</a>
+  		<label class="menu__close" for="menu__button"></label>
+	</nav>
+
+	<section>
+			<form  enctype="multipart/form-data" method="POST">
+				<fieldset >
+					<legend>Log in information</legend>
+					<label for="name">Username</label><br/>
+					<input type="text" name="nombre" size="25" id="name"/><br/><br/>
+					<label for="mail"> Email </label><br/>
+					<input type="text" size="25" name="correo" id="mail"/><br/><br/>
+					<label for="passwd"> Password </label><br/>
+					<input type="password" maxlength="15" name="psswd" size="12" id="passwd"/><br/><br/>
+					<label for="pass2"> Repeat Password</label><br/>
+					<input type="password" size="12" maxlength="15" name="psswd" id="pass2"/><br/>
+					<p>FrontEnd or BackEnd?</p>
+					<label for="Sega">FrontEnd</label><input type="radio" checked="checked"  name="opcion"  id="Sega"/><br/>
+					<label for="Nintendo">BackEnd&nbsp;</label><input type="radio" name="opcion" id="Nintendo"/><br/><br/>
+					<label for="18">Interested in Bootstrap?</label><br/>
+					<input  type="checkbox" name="mayor18" id="18"><br/><br/>
+				</fieldset>	
+				<fieldset >
+					<legend>Others</legend>
+					<label for="continente">Choose your favourite programming language</label>
+					<select id="continente" name="Continente">
+						<option  value="Europa">Ruby</option>
+						<option selected="selected" value="Asia">C#</option>
+						<option value="Africa">Python</option>
+						<option value="Norte América">Java</option>
+						<option value="Sudamérica">JavaScript</option>
+						<option value="Oceanía">Perl</option>
+					</select><br/><br/><br/>
+					<label for="datos">Interesting information about you (optional)</label><br/>
+					<textarea cols="48" id="datos" rows="8"></textarea><br/><br/>
+					
+				</fieldset>
+				<input type="submit" value="Apply"/> 
+				<input type="reset" value="Delete introduced data"/>
+			</form>
+	</section>
+
+</body>
+</html>

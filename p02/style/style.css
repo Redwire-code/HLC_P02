@@ -19,7 +19,7 @@ h1 {
   text-align: center;
   color: #fff;
   width: 90%;  
-  margin-left: 10%;
+  margin-left: 6%;
 }
 
 
@@ -48,7 +48,7 @@ header h2{
   color: #fff;
   width: 90%;
   font-weight: 200;
-  margin-left: 10%;
+  margin-left: 6%;
 }
 
 
@@ -63,6 +63,7 @@ header h2{
 .menu a {
   text-decoration: none;
   color: #2e2e2e;
+
   visibility: hidden;
 
 }
@@ -415,9 +416,11 @@ input[type=checkbox]:not(:checked) ~ .menu__close {
 
 footer{
   width: 100%;
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   border-radius: 12px;
   clear: both;
   color: #2e2e2e;
@@ -454,7 +457,7 @@ footer article{
   background-color: #000;
 }
 
-.last li{
+.last img{
 
   display: inline-block;
 }
@@ -480,21 +483,31 @@ footer article{
 
 /*SECTION style*/
 
+form{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+textarea{
+  width: 50%;
+  resize: none;
+}
 
 .subpagesSection{
     width: 70%;
     float: right;
-    color: #2e2e2e;
+    color: #fff;
+    font-weight: 200;
 }
 
 .subpagesSection article{
     padding: 15px;
-    background-color: #c0c0c0;
+    background-color: #3f3f3f;
     margin-bottom: 15px;
     border-radius: 12px;
     border-style: inset;
     border-color: #459c69;
-    border-width: 4px;
+    border-width: 1.4px;
 }
 
 .subpagesSection h2{
@@ -547,7 +560,7 @@ li{
   border-bottom-color: transparent;
   border-left-color: #459c69;
   border-right-color: #408757;
-  border-width: 5px;
+  border-width: 4px;
 }
 
 .tableTitle{
@@ -559,7 +572,13 @@ li{
 
 }
 
+.row:nth-child(odd):hover{
+  background-color: #6e6d6d;
+}
 
+.row:nth-child(even):hover{
+  background-color: #5f5f5f;
+}
 
 .subPagesTable td{
 
@@ -567,11 +586,11 @@ li{
 }
 
 .row:nth-child(even){
-  background-color: #bbbbbb;
+  background-color: #505050;
 }
 
 .row:nth-child(odd){
-  background-color: #a5a5a5;
+  background-color: #404040;
 }
 
 
@@ -614,10 +633,9 @@ li{
 }
 
 .upButton{
-  background-color: #c0c0c0;
+  background-color: #3f3f3f;
   border-color: transparent;
 }
-
 
 
 
@@ -625,16 +643,21 @@ li{
   margin-left: 25%;
   text-align: left;
   width: 50%;
-  font-size: 0.97em;
+
+  font-size: 0.96em;
   padding: 3px;
   background-color: #23272e;
   border-radius: 6px;
+  border-left: 5px solid #459c69;
 }
 
 
 .subpageContent img{
   width: 15%;
   margin-left: 42.5%;
+  float: right;
+  margin-left: -0.1%;
+  padding-left: 12px;
 }
 
 .code h5{
@@ -644,7 +667,8 @@ li{
   font-size: 1em;
   margin-top: 0;
   margin-left: 0;
-  margin-right: 45%;
+  margin-right: 25%;
+  margin-left: 25%;
   border-radius: 3px;
   background: #38af6b;
 
@@ -698,13 +722,13 @@ li{
 aside{
   width: 29%;
   float: left;
-  background-color: #c0c0c0;
+  background-color: #3f3f3f;
   position: fixed;
   border-radius:12px ;
-  color: #2e2e2e;
+  color: #fff;
   border-style: inset;
   border-color: #459c69;
-  border-width: 4px;
+  border-width: 1.4px;
   
 }
 
@@ -725,7 +749,7 @@ aside{
 
 .sectionListAside li a{
   text-decoration: none;
-  color: #2e2e2e;
+  color: #fff;
 }
 
 

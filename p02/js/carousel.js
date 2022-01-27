@@ -40,7 +40,7 @@ window.addEventListener('load',function(){
 				  slidesToScroll: 1,
 				}
 			}
-		  ]
+		  ]	
 	});
 });
 

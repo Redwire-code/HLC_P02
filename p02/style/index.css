@@ -23,22 +23,69 @@ __________________________________________
 }
 
 .indexSection{
-  
+  font-weight: 200;
   width: 100%;
-  color: #2e2e2e;
+  color: #fff;
   margin-bottom: 12px;
 
 }
 
 .indexSection article{
   padding: 15px;
-  background-color: #c0c0c0;
+  background-color: #3f3f3f;
+
   margin-bottom: 15px;
   border-radius: 12px;
+  border-style: inset;
+  border-color: #459c69;
+  border-width: 1.4px;
 
 }
 
+.organizationTable{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-collapse: collapse;
 
+
+}
+
+.tableRow:nth-child(odd):hover{
+  background-color: #6e6d6d;
+}
+
+.tableRow:nth-child(even):hover{
+  background-color: #5f5f5f;
+}
+
+
+  
+.tableRow:nth-child(even){
+
+  background-color: #505050;
+}
+
+.tableRow:nth-child(odd){
+  background-color: #404040;
+}
+
+.titleTable{
+  background-color: #459c69;
+  padding:12px;
+  font-weight: 400;
+}
+
+
+hr{
+  width: calc(1% + 8em);
+  float: left;
+  margin-left:2.4px;
+  margin-top: calc(1% - 1.4em);
+  color:  #459c69;
+
+}
 
 .content h3{
   width: 50%;
@@ -49,7 +96,7 @@ __________________________________________
   font-weight: 300;
 }
 
-.indexSection h2{
+.indexSection article h2{
   margin-left: 100px;
   margin-right:  100px;
   background-color: #459c69;
@@ -60,6 +107,25 @@ __________________________________________
   margin-top: 0;
 }
 
+
+
+.content > h3.webContentSection{
+  text-align: left;
+  background-color:#3f3f3f;
+  margin-left: 0;
+  border-color: #fff;
+}
+
+
+.content div{
+  border-radius: 6px;
+  background-color: rgb(0, 0, 0,.4);
+
+}
+
+.content div p{
+  padding: 17px;
+}
 
 
 
@@ -82,10 +148,13 @@ __________________________________________
   line-height: 20px;
   text-align: center;
   background: none;
-  opacity: 0.5;
+  opacity: .5;
 }
 
-.carousel__previous,
+.carousel__previous:hover{
+  opacity: 1;
+}
+
 .carousel__next:hover{
   opacity: 1;
 }
@@ -103,9 +172,7 @@ __________________________________________
   opacity:.5;
 }
 
-.indic .glider-dot.active{
-  opacity: 1;
-}
+
 
 
 .items__carousel{
