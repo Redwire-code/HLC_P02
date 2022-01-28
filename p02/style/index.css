@@ -78,11 +78,12 @@ __________________________________________
 }
 
 
+
 hr{
-  width: calc(1% + 8em);
+  width: calc(2em + 8em);
   float: left;
   margin-left:2.4px;
-  margin-top: calc(1% - 1.4em);
+  margin-top: calc(3em - 4em);
   color:  #459c69;
 
 }
@@ -107,7 +108,10 @@ hr{
   margin-top: 0;
 }
 
+.sections{
+  margin-top: -40px;
 
+}
 
 .content > h3.webContentSection{
   text-align: left;
