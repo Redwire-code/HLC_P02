@@ -5,26 +5,22 @@
 	<title>Main page</title>
 	<link rel="icon" type="image/x-icon" href="./images/mainIcon.ico">
 	<link rel="stylesheet" href="./style/jquery.css">
-    <link rel="stylesheet" href="./style/style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/pageScript.js"></script>
+	<link rel="stylesheet" href="./style/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/pageScript.js"></script>
 </head>
 <body>
 
-	
-
 	<header>
-		<a href="./index.html" title="Return to main page"><img src="./images/home.png" alt="return to main page image"/></a>
 		<h1>JLearn</h1>	
 		<h2>JQuery</h2>
 	</header>
 	
-    <nav>
+    <nav class="navigation">
         <ul>
             <li><a>Bootstrap</a></li>
             <li><a>AngularJS</a></li>
-            <li><a>ExpressJS</a></li>
+            <li><a>NodeJS</a></li>
             <li><a>JQuery</a></li>
             <li><a>JS</a></li>
         </ul>
@@ -32,60 +28,41 @@
             <i class="fa fa-bars" aria-hidden="true"></i> 
         </div>
     </nav>
- 
- 
+
 	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	  $(".hidden").on('click', function() {
+		$("nav ul").toggle('slow');
+	  })
+	</script>
+
+
+	<div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="images/1.jpg" alt="">
+			</li>
+			<li>
+				<img src="images/2.jpg" alt="">
+			</li>
+			<li>
+				<img src="images/3.jpg" alt="">
+			</li>
+			<li>
+				<img src="images/4.jpg" alt="">
+			</li>
+		</ul>
+		<ol class="pagination"></ol>
+	</div>
+
 	<section>
-			
+		
 	</section>
 
 
-   
+	
 
-    <!-- Footer provisional -->
-	<footer>
-		<article>
-			<h3>Website Developed by:</h3>
-			<ul>
-				<li>Francisco Javier Martínez Martínez</li>
-				<li>Antonio Carrasco García</li>
-			</ul>
-		</article>	
-
-
-		<article>
-			<p class="pfooter">This website is under a Creative Commons License</p>
-			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC page" target="_blank"><img src="./images/license.png" alt="Creative Commons license" /></a>
-		</article>
-
-
-		<article class="last">
-			<p class="pfooter">This website uses the following technologies</p>
-			<div>
-				<img src="./images/html5.svg" alt="HTML5  image" />
-				<img src="./images/css3.svg" alt="CSS3  image" />
-				<img src="./images/javaScript.svg" alt="JS  image" />
-				<img src="./images/bootstrap.svg" alt="Bootstrap image" />
-				<img src="./images/JQuery.svg" alt="Bootstrap image" />
-			</div>
-		</article>
-
-		<article>
-			<p class="pfooter">Would you like to receive notifications about our new programming conten?</p>	
-			<p class="pfooter">If the answer is yes, then subscribe in the following button</p>
-			<a href="./suscriptions.html" target="_blank" title="Suscription icon"><img src="./images/subscribe.png" alt="subscribe here"></a>
-		</article>
-
-	</footer>  
-
-    <!-- Footer jquery -->
-
-
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
-      $(".hidden").on('click', function() {
-        $("nav ul").toggle('slow');
-      })
-    </script>
 </body>
 </html>

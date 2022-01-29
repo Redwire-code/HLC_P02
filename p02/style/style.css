@@ -430,7 +430,7 @@ footer{
 
 footer ul{
   list-style-type: none;
-  list-style-image: url(../images/row.png);
+  list-style-image: url("../images/row.png");
   padding-bottom: 15px;
 
 }
@@ -797,6 +797,7 @@ aside{
   text-decoration: none;
   color: #fff;
 }
+
 
 
 
