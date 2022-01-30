@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Angular</title>
-	<link rel="icon" type="image/x-icon" href="./images/mainIcon.ico">
+	<link rel="icon" type="image/x-icon" href="./images/angular.ico">
 	<link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -15,7 +15,6 @@
 			
 		<h2>Angular</h2>
 	</header>
-
 
 	<aside>
 		<h2>Content</h2>
@@ -30,7 +29,6 @@
 			<li><a href="#8">AngularJS Modules</a></li>
 			<li><a href="#9">Creating a Module</a></li>
 			<li><a href="#10">Adding a Controller</a></li>
-			<li><a href="#11">Adding a Directive</a></li>
 		</ul>
 	</aside>
 	
@@ -38,7 +36,7 @@
   		<input id="menu__button" type="checkbox" checked />
   		<a class="menu__item" href="./bootstrap.html">Bootstrap</a>
   		<a class="menu__item" href="./angular.html">AngularJS</a>
-  		<a class="menu__item" href="./express.html">ExpressJS</a>
+  		<a class="menu__item" href="./express.html">Node.js</a>
   		<a class="menu__item" href="./JQuery.html">JQuery</a>
   		<a class="menu__item" href="./javaScript.html">JS</a>
   		<label class="menu__close" for="menu__button"></label>
@@ -256,26 +254,6 @@
 					<p>app.controller("myCtrl", function($scope) {</p>
 					<p>$scope.firstName = "John";</p>
 					<p>$scope.lastName = "Doe";</p>
-					<p>});</p>
-					<p>< /script></p>
-				</div>
-			</div>
-		</article>
-
-		<article id=11>
-			<h2>Adding a Directive</h2>
-			<div class="subpageContent">
-				<p>AngularJS has a set of built-in directives which you can use to add functionality to your application.</p>
-				<p>For a full reference, visit our AngularJS directive reference.</p>
-				<p>In addition you can use the module to add your own directives to your applications:</p>
-				<h3>Example:</h3>
-				<div class="code">
-					<p>< div ng-app="myApp" w3-test-directive>< /div></p>
-					<p>< script></p>
-					<p>var app = angular.module("myApp", []);</p>
-					<p>app.directive("w3TestDirective", function() {</p>
-					<p>return {</p>
-					<p>template : "I was made in a directive constructor!"};</p>
 					<p>});</p>
 					<p>< /script></p>
 				</div>

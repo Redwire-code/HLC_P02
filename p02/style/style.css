@@ -720,8 +720,6 @@ li{
 
 }
 
-
-
 .operator{
   color:#56b6c2;
 }
@@ -775,16 +773,12 @@ aside{
   border-style: inset;
   border-color: #459c69;
   border-width: 1.4px;
-  
 }
 
 .sectionListAside{
   list-style-image: url(../images/row.png);
   margin-left: 5%;
   margin-right:  5%;
-
-
-
 }
 
 .sectionListAside li{
@@ -798,6 +792,10 @@ aside{
   color: #fff;
 }
 
+/*Clase para resaltado de texto*/
 
-
+.resaltado{
+  background-color: #38af6b;
+  border-radius: 5px;
+}
 
