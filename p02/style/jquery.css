@@ -6,6 +6,7 @@
   
   body {
     font-family: 'Century Gothic', sans-serif;
+    overflow-x: hidden;
   }
   
   header {
@@ -191,12 +192,18 @@
 
 
   .newFooter h3{
-    margin-left: -9.9%;
+    margin-left: -3.9%;
+    background-color: transparent;
   }
 
   .newFooter h3,li,p{
     font-weight: 200;
+
     
+  }
+
+  .newFooter ul{
+    margin-left: 28px;
   }
 
   .newFooter div:first-child{
@@ -213,17 +220,35 @@
   /* Section */
   /* ------------------ */
 
+  .newSection img{
+    width: 20%;
+    float: right;
+  }
+
+  .newSection h3{
+    margin-top: 22px;
+  }
+  .newContent p{
+    margin-bottom: 22px;
+  }
   .newSection{
-    width: 100%;
+    width: 70%;
+    margin-left: 30%;
     
     margin-top: 43px;
     
   }
 
-  .newSection{
-    background: #3f3f3f;
+  .newSection li{
+    list-style-image: url(../images/row.png);
   }
 
+  .newSection ul{
+    color: #fff;
+    font-weight: 200;
+    margin-left: 28%;
+    margin-bottom: 22px;
+  }
   .newSection h2 , h3 ,h4{
     color: #fff;
     font-weight: 200;
@@ -272,3 +297,5 @@
     padding-top: 8px;
     font-weight: 500;
   }
+
+
