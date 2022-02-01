@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+  }
+
+  table{
+    color: white;
+    font-weight: 200;
   }
   
   body {
@@ -25,6 +31,8 @@
   
   }
   
+
+
   .navigation ul li {
     display: inline-block;
     padding: 20px;
@@ -220,8 +228,8 @@
   /* Section */
   /* ------------------ */
 
-  .newSection img{
-    width: 20%;
+  p > img{
+    width: 17%;
     float: right;
   }
 
@@ -298,4 +306,8 @@
     font-weight: 500;
   }
 
+.newAside h2{
+  margin-top: 24px;
+}
 
+.newAside li{ text-align: center; margin-bottom: 12px; margin-top: 12px; }

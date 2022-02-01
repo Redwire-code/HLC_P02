@@ -49,14 +49,14 @@
 		<ol class="pagination"></ol>
 	</div>
 
-	<aside>
+	<aside class="newAside">
+		<h2 class="contentAside">Content</h2>
 		<ul>
-			<li>a</li>
-			<li>a</li>
-			<li>a</li>
-			<li>a</li>
-			<li>a</li>
-			<li>a</li>
+			<li><a title="GOTO" href="#WIJQ">What is jQuery?</a></li>
+			<li><a title="GOTO" href="#HTAI">How to add it</a></li>
+			<li><a title="GOTO" href="#JQS">jQuery Syntax</a></li>
+			<li><a title="GOTO" href="#JQSE">jQuery Selectors</a></li>
+			<li><a title="GOTO" href="#JQE">jQuery Events</a></li>
 		</ul>
 	</aside>
 	
@@ -76,7 +76,7 @@
 		
 		<article>
 			<br/>
-			<h2>What is jQuery?</h2>
+			<h2 id="WIJQ">What is jQuery?</h2>
 			
 			
 			<div class="newContent">
@@ -116,7 +116,7 @@
 
 		<article>
 			<br/>
-			<h2>How to add it</h2>
+			<h2 id="HTAI">How to add it</h2>
 			
 			
 			<div class="newContent">
@@ -142,19 +142,22 @@
 				</p>
 
 				<div class="code">
-					<h5>Code</h5>
-					<p> < head> </p>
-					<p> < script src="jquery-3.5.1.min.js"></script></p>
-					<p> < /head> </p>
+					<h5>JQuery code example</h5>
+					<p><span class="semicolonAndMore"><</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp; <span class="semicolonAndMore"><</span> <span class="variableName">script</span> <span class="constkeyword">src</span> <span class="operator">=</span> <span class="stringValue">"jquery-3.5.1.min.js"</span> <span class="semicolonAndMore">></span></script></p>
+					<p><span class="semicolonAndMore">< /</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
 					
 				</div>
 				<h3>jQuery CDN</h3>
 				<p>If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).</p>
 				
 				<div class="code">
-					 <p>< head></p>
-					 <p>< script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></ script></p>
-					 <p>< /head> </p>
+					<h5>JQuery code example</h5>
+					 <p><span class="semicolonAndMore"><</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
+					 <p>&nbsp;&nbsp;&nbsp;&nbsp;
+					 	<span class="semicolonAndMore"><</span> <span class="variableName">script</span> <span class="constkeyword">src</span><span class="operator">=</span><span class="stringValue">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span><span class="semicolonAndMore">></span> 
+					 	<span class="semicolonAndMore"> < / </span> <span class="variableName">script</span><span class="semicolonAndMore">></span></p>
+					<p><span class="semicolonAndMore">< /</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
 				</div>
 
 			</div>
@@ -165,12 +168,226 @@
 			
 			<br/>
 			
-			<h2>jQuery Syntax</h2>
+			<h2 id="JQS">jQuery Syntax</h2>
 			
 			<div class="newContent">
+				<p>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</p>
+				<p>Basic syntax is: $(selector).action()</p>
+				<ul>
+						
+					<li>A $ sign to define/access jQuery</li>
+					<li>A (selector) to "query (or find)" HTML elements</li>
+					<li>A jQuery action() to be performed on the element(s)</li>
+				</ul>
+				<p>Examples:</p>
 					
+				<p>$(this).hide() - hides the current element.</p>
+				<p>$("p").hide() - hides all <p> elements.</p>
+				<p>$(".test").hide() - hides all elements with class="test".</p>
+				<p>$("#test").hide() - hides the element with id="test".</p>
+					
+
+				<h3>The Document Ready Event</h3>
+
+				<p>You might have noticed that all jQuery methods in our examples, are inside a document ready event:</p>
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p>  <span class="comment">// jQuery methods go here...</span></p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+
+				</div>
+
+				<p>
+					This is to prevent any jQuery code from running before the document is finished loading (is ready).
+
+					It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section.
+
+					Here are some examples of actions that can fail if methods are run before the document is fully loaded:
+				</p>
+
+				<ul>
+					<li>Trying to hide an element that is not created yet</li>
+    				<li>Trying to get the size of an image that is not loaded yet</li>
+				</ul>
+
+				<p>Shorter method for the document ready event:</p>
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p>  <span class="comment">// jQuery methods go here...</span></p>
+
+					<p> <span class="semicolonAndMore">});</span> </p>
+
+				</div>
+
+				<p>Use the syntax you prefer. We think that the document ready event is easier to understand when reading the code.</p>
 			</div>
 
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
+		</article>
+
+
+		<article>
+			
+			<br/>
+			
+			<h2 id="JQSE">jQuery Selectors</h2>
+			
+			<div class="newContent">
+				<p>jQuery selectors are one of the most important parts of the jQuery library.</p>
+
+				<p>
+				   jQuery selectors allow you to select and manipulate HTML element(s).
+
+				   jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.
+
+				   All selectors in jQuery start with the dollar sign and parentheses: $().
+				</p>
+
+
+				<h3>The element Selector</h3>
+
+				<p>The jQuery element selector selects elements based on the element name.</p>
+
+				<p>You can select all < p> elements on a page like this:</p>
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span></p>
+				</div>
+
+				
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p>   <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"button"</span><span class="semicolonAndMore">).</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span>(){</span></p>
+					<p>     <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hide</span><span class="semicolonAndMore">();</span></p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+				</div>
+
+				<h3>The #id Selector</h3>
+				<p>The jQuery #id selector uses the id attribute of an HTML tag to find the specific element.
+
+					An id should be unique within a page, so you should use the #id selector when you want to find a single, unique element.
+
+					To find an element with a specific id, write a hash character, followed by the id of the HTML element:</p>
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#test"</span><span class="semicolonAndMore">)</span></p>
+				</div>
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p>   <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"button"</span><span class="semicolonAndMore">).</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span>(){</span></p>
+					<p>     <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#test"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hide</span><span class="semicolonAndMore">();</span></p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+				</div>
+
+				<h3>The .class Selector</h3>
+
+				<p>The jQuery .class selector finds elements with a specific class.
+
+					To find elements with a specific class, write a period character, followed by the name of the class:</p>
+
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+						<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">".className"</span><span class="semicolonAndMore">)</span></p>
+				</div>
+
+				<div class="code">
+					<h5>JQuery code example</h5>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p>   <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"button"</span><span class="semicolonAndMore">).</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span>(){</span></p>
+					<p>     <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">".className"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hide</span><span class="semicolonAndMore">();</span></p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> <span class="semicolonAndMore">});</span> </p>
+				</div>
+
+
+				<h3>More Examples of jQuery Selectors</h3>
+
+
+				<table class="subPagesTable">
+					<tr class="row">
+						<th class="tableTitle">Syntax</th>
+						<th class="tableTitle">Description</th>
+					</tr>
+
+					<tr class="row">
+						<td>$("*")</td>
+						<td>Selects all elements</td>
+					</tr>
+
+					<tr class="row">
+						<td>$(this)</td>
+						<td>Selects the current HTML element</td>
+					</tr>
+
+					<tr class="row">
+						<td>$("p.intro")</td>
+						<td>Selects all < p> elements with class="intro"</td>
+					</tr>
+
+					<tr class="row">
+						<td>$("p:first")</td>
+						<td>Selects the first < p> element</td>
+					</tr>
+
+					<tr class="row">
+						<td>$("ul li:first")</td>
+						<td>Selects the first < li> element of the first < ul></td>
+					</tr>
+
+					<tr class="row">
+						<td>$("ul li:first-child")</td>
+						<td>Selects the first < li> element of every < ul></td>
+					</tr>
+
+					<tr class="row">
+						<td>$("[href]")</td>
+						<td>Selects all elements with an href attribute</td>
+					</tr>
+
+					<tr class="row">
+						<td>$("a[target='_blank']")</td>
+						<td>Selects all <a> elements with a target attribute value equal to "_blank"</td>
+					</tr>
+
+					<tr class="row">
+						<td>$("a[target!='_blank']")</td>
+						<td>Selects all <a> elements with a target attribute value NOT equal to "_blank"</td>
+					</tr>
+
+					<tr class="row">
+						<td>$(":button")</td>
+						<td>Selects all < button> elements and < input> elements of type="button"</td>
+					</tr>
+					<tr class="row">
+						<td>$("tr:even")</td>
+						<td>Selects all even < tr> elements</td>
+					</tr>
+
+					<tr class="row">
+						<td>$("tr:odd")</td>
+						<td>Selects all odd < tr> elements</td>
+					</tr>
+
+					
+
+				</table>
+
+
+			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 
 		</article>
 
@@ -179,42 +396,312 @@
 			
 			<br/>
 			
-			<h2>jQuery Selectors</h2>
+			<h2 id="JQE">jQuery Events</h2>
 			
 			<div class="newContent">
+				<h3>What are Events?</h3>
+				<p>All the different visitors' actions that a web page can respond to are called events.
+
+				An event represents the precise moment when something happens.</p>
+
+				<p>Examples:</p>
+
+				<ul>
+					<li>moving a mouse over an element</li>
+					<li>selecting a radio button</li>
+					<li>clicking on an element</li>
+				</ul>
+
+
+				<p>Here are some common DOM events:</p>
+
+				<table class="subPagesTable">
+					<tr class="row">
+						<th class="tableTitle">Mouse Events</th>
+					</tr>
+					<tr class="row">
+						<td>click</td>
+					</tr>
+					<tr class="row">
+						<td>dblclick</td>
+					</tr>
+					<tr class="row">
+						<td>mouseenter</td>
+					</tr>
+					<tr class="row">
+						<td>mouseleave</td>
+					</tr>
+				</table>
+				<table class="subPagesTable">
+					<tr class="row">
+						<th class="tableTitle">Keyboard Events</th>
+					</tr>
+					<tr class="row">
+						<td>keypress</td>
+					</tr>
+					<tr class="row">
+						<td>keydown</td>
+					</tr>
+					<tr class="row">
+						<td>keyup</td>
+					</tr>
+				</table>
+				<table class="subPagesTable">
+					<tr class="row">
+						<th class="tableTitle">Form Events</th>
+					</tr>
+					<tr class="row">
+						<td>submit</td>
+					</tr>
+					<tr class="row">
+						<td>change</td>
+					</tr>
+					<tr class="row">
+						<td>focus</td>
+					</tr>
+					<tr class="row">
+						<td>blur</td>
+					</tr>
+				</table>
+				<table class="subPagesTable">
+					<tr class="row">
+						<th class="tableTitle">Document/Window Events</th>
+					</tr>
+					<tr class="row">
+						<td>load</td>
+					</tr>
+					<tr class="row">
+						<td>resize</td>
+					</tr>
+					<tr class="row">
+						<td>scroll</td>
+					</tr>
+					<tr class="row">
+						<td>unload</td>
+					</tr>
+				</table>
+
+
+				<h3>jQuery Syntax For Event Methods</h3>
+				<p>
+					In jQuery, most DOM events have an equivalent jQuery method.
+
+					To assign a click event to all paragraphs on a page, you can do this: 
+				</p>
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">click</span><span class="semicolonAndMore">();</span></p>
+				</div>
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p class="comment">   // action goes here!!</p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+				<h3>Commonly Used jQuery Event Methods</h3>
+
+				<h3>Ready</h3>
+				<div class="code">
 					
+
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="semicolonAndMore">)</span></p>
+					
+				</div>
+
+				<p>The $(document).ready() method allows us to execute a function when the document is fully loaded. This event is already explained in the jQuery Syntax chapter. </p>
+
+
+
+
+
+				<h3>Click</h3>
+				<div class="code">
+					<p><span class="operator">click</span><span class="semicolonAndMore">()</span></p>
+					
+				</div>
+
+				<p>
+					The click() method attaches an event handler function to an HTML element.
+
+					The function is executed when the user clicks on the HTML element.
+
+					The following example says: When a click event fires on a < p> element; hide the current < p> element:
+				</p>
+
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">this</span> <span class="semicolonAndMore">).</span><span class="operator">hide<span class="semicolonAndMore">();</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+				<h3>Double click</h3>
+				<div class="code">
+					<p><span class="operator">dblclick</span><span class="semicolonAndMore">()</span></p>
+					
+				</div>
+
+				<p>
+					The dblclick() method attaches an event handler function to an HTML element.
+
+					The function is executed when the user double-clicks on the HTML element:
+				</p>
+
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">dblclick</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">this</span> <span class="semicolonAndMore">).</span><span class="operator">hide<span class="semicolonAndMore">();</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+
+
+
+
+				<h3>Mouse enter</h3>
+				<div class="code">
+					<p><span class="operator">mouseenter</span><span class="semicolonAndMore">()</span></p>
+					
+				</div>
+				<p>
+					The mouseenter() method attaches an event handler function to an HTML element.
+
+					The function is executed when the mouse pointer enters the HTML element:
+				</p>
+
+				
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mouseenter</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"You entered p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+
+				<h3>Mouse leave</h3>
+				<div class="code">
+					<p><span class="operator">mouseleave</span><span class="semicolonAndMore">()</span></p>
+
+					
+				</div>
+				<p>
+					The mouseleave() method attaches an event handler function to an HTML element.
+
+					The function is executed when the mouse pointer leaves the HTML element:
+				</p>
+
+			
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mouseleave</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Bye Bye!"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+
+				<h3>Mouse Down</h3>
+				<div class="code">
+					<p><span class="operator">mousedown</span><span class="semicolonAndMore">()</span></p>
+				</div>
+
+				<p>The mousedown() method attaches an event handler function to an HTML element.
+
+The function is executed, when the left, middle or right mouse button is pressed down, while the mouse is over the HTML element:</p>
+
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mousedown</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Mouse down over p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+
+
+				<h3>Mouse Up</h3>
+				<div class="code">
+					<p><span class="operator">mouseup</span><span class="semicolonAndMore">()</span></p>
+					
+				</div>
+
+				<p>The mouseup() method attaches an event handler function to an HTML element.
+
+The function is executed, when the left, middle or right mouse button is released, while the mouse is over the HTML element:</p>
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mouseup</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Mouse up over p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+				<h3>Hover</h3>
+				<div class="code">
+					<p><span class="operator">hover</span><span class="semicolonAndMore">()</span></p>
+				</div>
+				<p>
+					The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() methods.
+
+The first function is executed when the mouse enters the HTML element, and the second function is executed when the mouse leaves the HTML element:
+				</p>
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+				
+
+						<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hover</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"You entered p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">},</p>
+						<p class="keyword">function<span class="semicolonAndMore">(){</span></p>
+						<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Bye! You now leave p1!"</span> <span class="semicolonAndMore">);</span></p>
+						<p class="semicolonAndMore">});</p>
+				</div>
+
+				<h3>Focus</h3>
+				<div class="code">
+					<p><span class="operator">focus</span><span class="semicolonAndMore">()</span></p>
+				</div>
+				<p>The focus() method attaches an event handler function to an HTML form field.
+
+				The function is executed when the form field gets focus:</p>
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"input"</span><span class="semicolonAndMore">).</span><span class="operator">focus</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p class="operator">$<span class="semicolonAndMore">(</span><span class="constkeyword">this</span><span class="semicolonAndMore">).</span><span>css</span><span class="semicolonAndMore">(</span><span class="stringValue">"background-color"</span><span class="semicolonAndMore">,</span> <span class="stringValue">"#cccccc"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
+
+
+				<h3>Blur</h3>
+				<div class="code">
+					<p><span class="operator">blur</span><span class="semicolonAndMore">()</span></p>
+				</div>
+				<p>The blur() method attaches an event handler function to an HTML form field.
+
+					The function is executed when the form field loses focus:</p>
+
+
+				<div class="code">
+					<h5>JQuery Code Example</h5>
+					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"input"</span><span class="semicolonAndMore">).</span><span class="operator">blur</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
+					<p class="operator">$<span class="semicolonAndMore">(</span><span class="constkeyword">this</span><span class="semicolonAndMore">).</span><span>css</span><span class="semicolonAndMore">(</span><span class="stringValue">"background-color"</span><span class="semicolonAndMore">,</span> <span class="stringValue">"#cccccc"</span> <span class="semicolonAndMore">);</span></p>
+					<p class="semicolonAndMore">});</p>
+				</div>
+
 			</div>
 
-
+<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
-
-		<article>
-			
-			<br/>
-			
-			<h2>jQuery Events</h2>
-			
-			<div class="newContent">
-					
-			</div>
-
-
-		</article>
-
-
-		<article>
-			
-			<br/>
-			
-			<h2>jQuery Effects</h2>
-			
-			<div class="newContent">
-					
-			</div>
-
-
-		</article>
 
 
 		

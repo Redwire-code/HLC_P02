@@ -59,6 +59,10 @@ $(document).ready(function(){
 
 		$('.slider li').hide(); // Ocultamos todos los slides
 		$('.slider li:nth-child('+ imgPos +')').fadeIn(); // Mostramos el Slide seleccionado
+
+		
+
+
 	}
 
 });
