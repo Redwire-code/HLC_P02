@@ -137,15 +137,30 @@
 
 				<p>
 					The jQuery library is a single JavaScript file, 
-					and you reference it with the HTML < script> tag 
-					(notice that the < script> tag should be inside the < head> section):
+					and you reference it with the HTML &lt;script> tag 
+					(notice that the &lt;script> tag should be inside the &lt;head> section):
 				</p>
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p><span class="semicolonAndMore"><</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp; <span class="semicolonAndMore"><</span> <span class="variableName">script</span> <span class="constkeyword">src</span> <span class="operator">=</span> <span class="stringValue">"jquery-3.5.1.min.js"</span> <span class="semicolonAndMore">></span></script></p>
-					<p><span class="semicolonAndMore">< /</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
+					<p>
+						<span class="semicolonAndMore">&lt;</span> 
+						<span class="variableName">head</span>
+						<span class="semicolonAndMore">></span>
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp; 
+						<span class="semicolonAndMore">&lt;</span> 
+						<span class="variableName">script</span> 
+						<span class="constkeyword">src</span> 
+						<span class="operator">=</span> 
+						<span class="stringValue">"jquery-3.5.1.min.js"</span> 
+						<span class="semicolonAndMore">></span>&lt;/script>
+					</p>
+					<p>
+						<span class="semicolonAndMore">&lt;/</span> 
+						<span class="variableName">head</span>
+						<span class="semicolonAndMore">></span>
+					</p>
 					
 				</div>
 				<h3>jQuery CDN</h3>
@@ -153,11 +168,26 @@
 				
 				<div class="code">
 					<h5>JQuery code example</h5>
-					 <p><span class="semicolonAndMore"><</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
+					 <p>
+					 		<span class="semicolonAndMore">&lt;</span> 
+					 	<span class="variableName">head</span>
+					 	<span class="semicolonAndMore">></span></p>
 					 <p>&nbsp;&nbsp;&nbsp;&nbsp;
-					 	<span class="semicolonAndMore"><</span> <span class="variableName">script</span> <span class="constkeyword">src</span><span class="operator">=</span><span class="stringValue">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span><span class="semicolonAndMore">></span> 
-					 	<span class="semicolonAndMore"> < / </span> <span class="variableName">script</span><span class="semicolonAndMore">></span></p>
-					<p><span class="semicolonAndMore">< /</span> <span class="variableName">head</span><span class="semicolonAndMore">></span></p>
+					 	
+					 		<span class="semicolonAndMore">&lt;</span> 
+					 		<span class="variableName">script</span> 
+					 		<span class="constkeyword">src</span>
+					 		<span class="operator">=</span>
+					 		<span class="stringValue">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>
+					 		<span class="semicolonAndMore">></span> 
+					 	
+					 		<span class="semicolonAndMore"> &lt;/ </span> 
+					 		<span class="variableName">script</span>
+					 		<span class="semicolonAndMore">></span></p>
+					<p>
+							<span class="semicolonAndMore">&lt;/</span> 
+						<span class="variableName">head</span>
+						<span class="semicolonAndMore">></span></p>
 				</div>
 
 			</div>
@@ -193,9 +223,20 @@
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p>  <span class="comment">// jQuery methods go here...</span></p>
-					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">document</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">ready</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+					<p>  
+							<span class="comment">// jQuery methods go here...</span></p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
 
 				</div>
 
@@ -216,10 +257,16 @@
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p>  <span class="comment">// jQuery methods go here...</span></p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+					<p>  
+							<span class="comment">// jQuery methods go here...</span></p>
 
-					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
 
 				</div>
 
@@ -252,22 +299,67 @@
 
 				<p>The jQuery element selector selects elements based on the element name.</p>
 
-				<p>You can select all < p> elements on a page like this:</p>
+				<p>You can select all &lt;p> elements on a page like this:</p>
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span></p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"p"</span>
+						<span class="semicolonAndMore">)</span></p>
 				</div>
 
 				
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p>   <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"button"</span><span class="semicolonAndMore">).</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span>(){</span></p>
-					<p>     <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hide</span><span class="semicolonAndMore">();</span></p>
-					<p> <span class="semicolonAndMore">});</span> </p>
-					<p> <span class="semicolonAndMore">});</span> </p>
+					
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">document</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">ready</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+
+					<p>   
+						
+							<span class="operator">$</span>
+						
+							<span class="semicolonAndMore">(</span>
+						
+							<span class="stringValue">"button"</span>
+						
+							<span class="semicolonAndMore">).</span>
+						
+							<span class="operator">click</span>
+						
+							<span class="semicolonAndMore">(</span>
+						
+							<span class="keyword">function</span>
+						
+							<span>(){</span>
+					</p>
+
+
+					<p>     
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"p"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">hide</span>
+						<span class="semicolonAndMore">();</span></p>
+
+
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
 				</div>
 
 				<h3>The #id Selector</h3>
@@ -279,16 +371,46 @@
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#test"</span><span class="semicolonAndMore">)</span></p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"#test"</span>
+						<span class="semicolonAndMore">)</span></p>
 				</div>
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p>   <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"button"</span><span class="semicolonAndMore">).</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span>(){</span></p>
-					<p>     <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#test"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hide</span><span class="semicolonAndMore">();</span></p>
-					<p> <span class="semicolonAndMore">});</span> </p>
-					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">document</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">ready</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+					<p>   
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"button"</span>
+						<span class="semicolonAndMore">).</span>
+						<span class="operator">click</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span>(){</span></p>
+					<p>     
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"#test"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">hide</span>
+						<span class="semicolonAndMore">();</span></p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
 				</div>
 
 				<h3>The .class Selector</h3>
@@ -300,16 +422,47 @@
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-						<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">".className"</span><span class="semicolonAndMore">)</span></p>
+						<p> 
+								<span class="operator">$</span>
+							<span class="semicolonAndMore">(</span>
+							<span class="stringValue">".className"</span>
+							<span class="semicolonAndMore">)</span></p>
 				</div>
 
 				<div class="code">
 					<h5>JQuery code example</h5>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p>   <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"button"</span><span class="semicolonAndMore">).</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span>(){</span></p>
-					<p>     <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">".className"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hide</span><span class="semicolonAndMore">();</span></p>
-					<p> <span class="semicolonAndMore">});</span> </p>
-					<p> <span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">document</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">ready</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+					<p>   
+						<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"button"</span>
+						<span class="semicolonAndMore">).</span>
+						<span class="operator">click</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span>(){</span>
+					</p>
+					<p>     
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">".className"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">hide</span>
+						<span class="semicolonAndMore">();</span></p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
+					<p> 
+							<span class="semicolonAndMore">});</span> </p>
 				</div>
 
 
@@ -334,22 +487,22 @@
 
 					<tr class="row">
 						<td>$("p.intro")</td>
-						<td>Selects all < p> elements with class="intro"</td>
+						<td>Selects all &lt;p> elements with class="intro"</td>
 					</tr>
 
 					<tr class="row">
 						<td>$("p:first")</td>
-						<td>Selects the first < p> element</td>
+						<td>Selects the first &lt;p> element</td>
 					</tr>
 
 					<tr class="row">
 						<td>$("ul li:first")</td>
-						<td>Selects the first < li> element of the first < ul></td>
+						<td>Selects the first &lt;li> element of the first &lt;ul></td>
 					</tr>
 
 					<tr class="row">
 						<td>$("ul li:first-child")</td>
-						<td>Selects the first < li> element of every < ul></td>
+						<td>Selects the first &lt;li> element of every &lt;ul></td>
 					</tr>
 
 					<tr class="row">
@@ -359,26 +512,26 @@
 
 					<tr class="row">
 						<td>$("a[target='_blank']")</td>
-						<td>Selects all <a> elements with a target attribute value equal to "_blank"</td>
+						<td>Selects all &lt;a> elements with a target attribute value equal to "_blank"</td>
 					</tr>
 
 					<tr class="row">
 						<td>$("a[target!='_blank']")</td>
-						<td>Selects all <a> elements with a target attribute value NOT equal to "_blank"</td>
+						<td>Selects all &lt;a> elements with a target attribute value NOT equal to "_blank"</td>
 					</tr>
 
 					<tr class="row">
 						<td>$(":button")</td>
-						<td>Selects all < button> elements and < input> elements of type="button"</td>
+						<td>Selects all &lt;button> elements and &lt;input> elements of type="button"</td>
 					</tr>
 					<tr class="row">
 						<td>$("tr:even")</td>
-						<td>Selects all even < tr> elements</td>
+						<td>Selects all even &lt;tr> elements</td>
 					</tr>
 
 					<tr class="row">
 						<td>$("tr:odd")</td>
-						<td>Selects all odd < tr> elements</td>
+						<td>Selects all odd &lt;tr> elements</td>
 					</tr>
 
 					
@@ -491,12 +644,28 @@
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">click</span><span class="semicolonAndMore">();</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"p"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">click</span>
+						<span class="semicolonAndMore">();</span></p>
 				</div>
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"p"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">click</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
 					<p class="comment">   // action goes here!!</p>
 					<p class="semicolonAndMore">});</p>
 				</div>
@@ -507,7 +676,15 @@
 				<div class="code">
 					
 
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">document</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">ready</span><span class="semicolonAndMore">(</span><span class="semicolonAndMore">)</span></p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">document</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">ready</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="semicolonAndMore">)</span></p>
 					
 				</div>
 
@@ -519,7 +696,9 @@
 
 				<h3>Click</h3>
 				<div class="code">
-					<p><span class="operator">click</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">click</span>
+						<span class="semicolonAndMore">()</span></p>
 					
 				</div>
 
@@ -528,20 +707,37 @@
 
 					The function is executed when the user clicks on the HTML element.
 
-					The following example says: When a click event fires on a < p> element; hide the current < p> element:
+					The following example says: When a click event fires on a &lt;p> element; hide the current &lt;	p> element:
 				</p>
 
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">click</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">this</span> <span class="semicolonAndMore">).</span><span class="operator">hide<span class="semicolonAndMore">();</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"p"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">click</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">this</span> 
+						<span class="semicolonAndMore">).</span>
+						<span class="operator">hide</span>
+							<span class="semicolonAndMore">();</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
 				<h3>Double click</h3>
 				<div class="code">
-					<p><span class="operator">dblclick</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">dblclick</span>
+						<span class="semicolonAndMore">()</span></p>
 					
 				</div>
 
@@ -554,8 +750,23 @@
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"p"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">dblclick</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">$</span><span class="semicolonAndMore">(</span><span class="constkeyword">this</span> <span class="semicolonAndMore">).</span><span class="operator">hide<span class="semicolonAndMore">();</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"p"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">dblclick</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">this</span> 
+						<span class="semicolonAndMore">).</span>
+						<span class="operator">hide</span>
+							<span class="semicolonAndMore">();</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
@@ -565,7 +776,9 @@
 
 				<h3>Mouse enter</h3>
 				<div class="code">
-					<p><span class="operator">mouseenter</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">mouseenter</span>
+						<span class="semicolonAndMore">()</span></p>
 					
 				</div>
 				<p>
@@ -578,15 +791,30 @@
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mouseenter</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"You entered p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"#p1"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">mouseenter</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">alert</span>
+							<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"You entered p1!"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
 
 				<h3>Mouse leave</h3>
 				<div class="code">
-					<p><span class="operator">mouseleave</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">mouseleave</span>
+						<span class="semicolonAndMore">()</span></p>
 
 					
 				</div>
@@ -600,15 +828,30 @@
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mouseleave</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Bye Bye!"</span> <span class="semicolonAndMore">);</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"#p1"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">mouseleave</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">alert</span>
+							<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"Bye Bye!"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
 
 				<h3>Mouse Down</h3>
 				<div class="code">
-					<p><span class="operator">mousedown</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">mousedown</span>
+						<span class="semicolonAndMore">()</span></p>
 				</div>
 
 				<p>The mousedown() method attaches an event handler function to an HTML element.
@@ -618,8 +861,21 @@ The function is executed, when the left, middle or right mouse button is pressed
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mousedown</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Mouse down over p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"#p1"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">mousedown</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">alert</span>
+							<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"Mouse down over p1!"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
@@ -627,7 +883,9 @@ The function is executed, when the left, middle or right mouse button is pressed
 
 				<h3>Mouse Up</h3>
 				<div class="code">
-					<p><span class="operator">mouseup</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">mouseup</span>
+						<span class="semicolonAndMore">()</span></p>
 					
 				</div>
 
@@ -637,14 +895,29 @@ The function is executed, when the left, middle or right mouse button is release
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">mouseup</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Mouse up over p1!"</span> <span class="semicolonAndMore">);</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"#p1"</span>
+						<span class="semicolonAndMore">)</span>
+						<span class="semicolonAndMore">.</span>
+						<span class="operator">mouseup</span>
+						<span class="semicolonAndMore">(</span>
+							<span class="keyword">function</span>
+						<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">alert</span>
+							<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"Mouse up over p1!"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
 				<h3>Hover</h3>
 				<div class="code">
-					<p><span class="operator">hover</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">hover</span>
+						<span class="semicolonAndMore">()</span></p>
 				</div>
 				<p>
 					The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() methods.
@@ -656,17 +929,37 @@ The first function is executed when the mouse enters the HTML element, and the s
 					<h5>JQuery Code Example</h5>
 				
 
-						<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"#p1"</span><span class="semicolonAndMore">)</span><span class="semicolonAndMore">.</span><span class="operator">hover</span><span class="semicolonAndMore">(<span class="keyword">function</span><span class="semicolonAndMore">){</span></p>
-					<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"You entered p1!"</span> <span class="semicolonAndMore">);</span></p>
+						<p>
+								<span class="operator">$</span>
+							<span class="semicolonAndMore">(</span>
+							<span class="stringValue">"#p1"</span>
+							<span class="semicolonAndMore">)</span>
+							<span class="semicolonAndMore">.</span>
+							<span class="operator">hover</span>
+							<span class="semicolonAndMore">(</span>
+								<span class="keyword">function</span>
+							<span class="semicolonAndMore">){</span></p>
+					<p> 
+							<span class="operator">alert</span>
+							<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"You entered p1!"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">},</p>
-						<p class="keyword">function<span class="semicolonAndMore">(){</span></p>
-						<p> <span class="operator">alert<span class="semicolonAndMore">(</span><span class="stringValue">"Bye! You now leave p1!"</span> <span class="semicolonAndMore">);</span></p>
+						<p class="keyword">function
+								<span class="semicolonAndMore">(){</span></p>
+						<p> 
+								<span class="operator">alert</span>
+								<span class="semicolonAndMore">(</span>
+							<span class="stringValue">"Bye! You now leave p1!"</span> 
+							<span class="semicolonAndMore">);</span></p>
 						<p class="semicolonAndMore">});</p>
 				</div>
 
 				<h3>Focus</h3>
 				<div class="code">
-					<p><span class="operator">focus</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">focus</span>
+						<span class="semicolonAndMore">()</span></p>
 				</div>
 				<p>The focus() method attaches an event handler function to an HTML form field.
 
@@ -674,8 +967,25 @@ The first function is executed when the mouse enters the HTML element, and the s
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"input"</span><span class="semicolonAndMore">).</span><span class="operator">focus</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p class="operator">$<span class="semicolonAndMore">(</span><span class="constkeyword">this</span><span class="semicolonAndMore">).</span><span>css</span><span class="semicolonAndMore">(</span><span class="stringValue">"background-color"</span><span class="semicolonAndMore">,</span> <span class="stringValue">"#cccccc"</span> <span class="semicolonAndMore">);</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"input"</span>
+						<span class="semicolonAndMore">).</span>
+						<span class="operator">focus</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+					<p class="operator">$
+							<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">this</span>
+						<span class="semicolonAndMore">).</span>
+						<span>css</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"background-color"</span>
+						<span class="semicolonAndMore">,</span> 
+						<span class="stringValue">"#cccccc"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
@@ -683,7 +993,9 @@ The first function is executed when the mouse enters the HTML element, and the s
 
 				<h3>Blur</h3>
 				<div class="code">
-					<p><span class="operator">blur</span><span class="semicolonAndMore">()</span></p>
+					<p>
+							<span class="operator">blur</span>
+						<span class="semicolonAndMore">()</span></p>
 				</div>
 				<p>The blur() method attaches an event handler function to an HTML form field.
 
@@ -692,14 +1004,31 @@ The first function is executed when the mouse enters the HTML element, and the s
 
 				<div class="code">
 					<h5>JQuery Code Example</h5>
-					<p><span class="operator">$</span><span class="semicolonAndMore">(</span><span class="stringValue">"input"</span><span class="semicolonAndMore">).</span><span class="operator">blur</span><span class="semicolonAndMore">(</span><span class="keyword">function</span><span class="semicolonAndMore">(){</span></p>
-					<p class="operator">$<span class="semicolonAndMore">(</span><span class="constkeyword">this</span><span class="semicolonAndMore">).</span><span>css</span><span class="semicolonAndMore">(</span><span class="stringValue">"background-color"</span><span class="semicolonAndMore">,</span> <span class="stringValue">"#cccccc"</span> <span class="semicolonAndMore">);</span></p>
+					<p>
+							<span class="operator">$</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"input"</span>
+						<span class="semicolonAndMore">).</span>
+						<span class="operator">blur</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="keyword">function</span>
+						<span class="semicolonAndMore">(){</span></p>
+					<p class="operator">$
+							<span class="semicolonAndMore">(</span>
+						<span class="constkeyword">this</span>
+						<span class="semicolonAndMore">).</span>
+						<span>css</span>
+						<span class="semicolonAndMore">(</span>
+						<span class="stringValue">"background-color"</span>
+						<span class="semicolonAndMore">,</span> 
+						<span class="stringValue">"#cccccc"</span> 
+						<span class="semicolonAndMore">);</span></p>
 					<p class="semicolonAndMore">});</p>
 				</div>
 
 			</div>
 
-<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
+		<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 
