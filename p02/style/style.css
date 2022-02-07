@@ -810,5 +810,42 @@ aside{
 
 
 
+/*
+
+added
+
+*/
+
+.resaltado{
+  background-color: #38af6b;
+  border-radius: 5px;
+}
 
 
+.rojoC{
+  color: #FF3333;
+}
+
+.moradoC{
+  color: #6D33FF;
+}
+
+.verdeC{
+  color: #5DFF33;
+}
+
+.amarilloC{
+  color: #FFFC33;
+}
+
+.azulC{
+  color: #33B6FF;
+}
+
+.naranjaC{
+  color: #FF8033;
+}
+
+.grisC{
+  color: #515151;
+}
