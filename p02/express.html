@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Node.js</title>
+	<link rel="icon" type="image/x-icon" href="./images/express.ico">
+	<link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+	<header>
+		<a href="./index.html" title="Return to main page"><img src="./images/home.png" alt="return to main page image"/></a>
+		<h1 id="MAIN">JLearn</h1>		
+		<h2>Node.js</h2>
+	</header>	
+
+	<aside>
+		<h2>Content</h2>
+		<ul class="sectionListAside">
+			<li><a href="#1">What is Node.js?</a></li>
+			<li><a href="#2">Getting Started</a></li>
+			<li><a href="#3">Command Line Interface</a></li>
+			<li><a href="#4">Initiate the Node.js File</a></li>
+			<li><a href="#5">Include Modules</a></li>
+			<li><a href="#6">Create Your Own Modules</a></li>
+			<li><a href="#7">Include Your Own Module</a></li>
+			<li><a href="#8">The Built-in HTTP Module</a></li>
+			<li><a href="#9">Node.js as a Web Server</a></li>
+			<li><a href="#10">Add an HTTP Header</a></li>
+			<li><a href="#11">Read the Query String</a></li>
+		</ul>
+	</aside>
+
+	<nav class="menu">
+  		<input id="menu__button" type="checkbox" checked />
+  		<a class="menu__item" href="./bootstrap.html">Bootstrap</a>
+  		<a class="menu__item" href="./angular.html">AngularJS</a>
+  		<a class="menu__item" href="./express.html">Node.js</a>
+  		<a class="menu__item" href="./JQuery.html">JQuery</a>
+  		<a class="menu__item" href="./javaScript.html">JS</a>
+  		<label class="menu__close" for="menu__button"></label>
+	</nav>
+
+	<section class="subpagesSection">
+
+		<article id=1>
+			<h2>What is Node.js?</h2>
+			<div class="subpageContent">
+				<p>
+					Node.js, Node.js, is a cross-platform runtime environment for the server layer (on the server side) based on JavaScript.
+				</p>
+				<p>
+					Node.js is an event-driven environment designed to create scalable applications, allowing you to establish and manage multiple connections at the same time. Thanks to this feature, you don't have to worry about process blocking, as there are no blockages.
+				</p>
+			</div>
+		</article>
+
+		<article id=2>
+			<h2>Getting Started</h2>
+			<div class="subpageContent">
+				<p>Once you have downloaded and installed Node.js on your computer, let's try to display "Hello World" in a web browser.</p>
+				<p>Create a Node.js file named "myfirst.js", and add the following code:</p>
+				<div class="code">
+					<p>var http = require('http');</p>
+					<p>http.createServer(function (req, res) {</p>
+					<p>res.writeHead(200, {'Content-Type': 'text/html'});</p>
+					<p>res.end('Hello World!');</p>
+					<p>}).listen(8080);</p>
+				</div>
+				<p>
+					Save the file on your computer: C:\Users\Your Name\myfirst.js
+				</p>
+				<p>
+					The code tells the computer to write "Hello World!" if anyone (e.g. a web browser) tries to access your computer on port 8080.
+				</p>
+				<p>
+					For now, you do not have to understand the code. It will be explained later.
+				</p>
+			</div>
+		</article>
+
+		<article id=3>
+			<h2>Command Line Interface</h2>
+			<div class="subpageContent">
+				<p>
+					Node.js files must be initiated in the "Command Line Interface" program of your computer.
+				</p>
+				<p>
+					How to open the command line interface on your computer depends on the operating system. For Windows users, press the start button and look for "Command Prompt", or simply write "cmd" in the search field.
+				</p>
+				<p>
+					Navigate to the folder that contains the file "myfirst.js", the command line interface window should look something like this:
+				</p>
+				<div class="code">
+					<p>C:\Users\Your Name>_</p>
+				</div>
+			</div>
+		</article>
+
+		<article id=4>
+			<h2>Initiate the Node.js File</h2>
+			<div class="subpageContent">
+				<p>The file you have just created must be initiated by Node.js before any action can take place.</p>
+				<p>Start your command line interface, write node myfirst.js and hit enter:</p>
+				<h3>Initiate "myfirst.js":</h3>
+				<div class="code">
+					<p>C:\Users\Your Name>node myfirst.js</p>
+				</div>
+				<p>
+					Now, your computer works as a server!
+				</p>
+				<p>
+					If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!
+				</p>
+				<p>
+					Start your internet browser, and type in the address: <a href="http://localhost:8080">http://localhost:8080</a>
+				</p>
+			</div>
+		</article>
+
+		<article id=5>
+			<h2>Include Modules</h2>
+			<div class="subpageContent">
+				<p>
+					To include a module, use the require() function with the name of the module:
+				</p>
+				<div class="code">
+					<p>var http = require('http');</p>
+				</div>
+				<p>
+					Now your application has access to the HTTP module, and is able to create a server:
+				</p>
+				<div class="code">
+					<p>http.createServer(function (req, res) {</p>
+					<p>res.writeHead(200, {'Content-Type': 'text/html'});</p>
+					<p>res.end('Hello World!');</p>
+					<p>}).listen(8080);</p>
+				</div>
+			</div>
+		</article>
+
+		<article id=6>
+			<h2>Create Your Own Modules</h2>
+			<div class="subpageContent">
+				<p>
+					You can create your own modules, and easily include them in your applications.
+				</p>
+				<p>
+					The following example creates a module that returns a date and time object:
+				</p>
+				<h3>Example:</h3>
+				<p>Create a module that returns the current date and time:</p>
+				<div class="code">
+					<p>exports.myDateTime = function () {</p>
+					<p>return Date();</p>
+					<p>};</p>
+				</div>
+				<p>
+					Use the exports keyword to make properties and methods available outside the module file.
+				</p>
+				<p>
+					Save the code above in a file called "myfirstmodule.js"
+				</p>
+			</div>
+		</article>
+
+		<article id=7>
+			<h2>Include Your Own Module</h2>
+			<div class="subpageContent">
+				<p>
+					Now you can include and use the module in any of your Node.js files.
+				</p>
+				<h3>Example:</h3>
+				<p>Use the module "myfirstmodule" in a Node.js file:</p>
+				<div class="code">
+					<p>var http = require('http');</p>
+					<p>var dt = require('./myfirstmodule');</p>
+					<p>http.createServer(function (req, res) {</p>
+					<p>res.writeHead(200, {'Content-Type': 'text/html'});</p>
+					<p>res.write("The date and time are currently: " + dt.myDateTime());</p>
+					<p>res.end();</p>
+					<p>}).listen(8080);</p>
+				</div>
+				<p>Notice that we use ./ to locate the module, that means that the module is located in the same folder as the Node.js file.</p>
+				<p>Save the code above in a file called "demo_module.js", and initiate the file:</p>
+				<p>Initiate demo_module.js:</p>
+				<div class="code">
+					<p>C:\Users\Your Name>node demo_module.js</p>
+				</div>
+				<p>
+					If you have followed the same steps on your computer, you will see the same result as the example: <a href="http://localhost:8080">http://localhost:8080</a>
+				</p>
+			</div>
+		</article>
+
+		<article id=8>
+			<h2>The Built-in HTTP Module</h2>
+			<div class="subpageContent">
+				<p>Node.js has a built-in module called HTTP, which allows Node.js to transfer data over the Hyper Text Transfer Protocol (HTTP).</p>
+				<p>To include the HTTP module, use the require() method:</p>
+				<div class="code">
+					<p>var http = require('http');</p>
+				</div>
+			</div>
+		</article>
+
+		<article id=9>
+			<h2>Node.js as a Web Server</h2>
+			<div class="subpageContent">
+				<p>
+					The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
+				</p>
+				<p>
+					Use the createServer() method to create an HTTP server:
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>var http = require('http');</p>
+					<p>//create a server object:</p>
+					<p>//create a server object:</p>
+					<p>res.write('Hello World!'); //write a response to the client</p>
+					<p>res.end(); //end the response</p>
+					<p>}).listen(8080); //the server object listens on port 8080</p>
+				</div>
+				<p>The function passed into the http.createServer() method, will be executed when someone tries to access the computer on port 8080.</p>
+				<p>Save the code above in a file called "demo_http.js", and initiate the file:</p>
+				<p>Initiate demo_http.js:</p>
+				<div class="code">
+					<p>C:\Users\Your Name>node demo_http.js</p>
+				</div>
+				<p>
+					If you have followed the same steps on your computer, you will see the same result as the example: <a href="http://localhost:8080">http://localhost:8080</a>
+				</p>
+			</div>
+		</article>
+
+		<article id=10>
+			<h2>Add an HTTP Header</h2>
+			<div class="subpageContent">
+				<p>
+					If the response from the HTTP server is supposed to be displayed as HTML, you should include an HTTP header with the correct content type:
+				</p>
+				<h3>Example:</h3>
+				<div class="code">
+					<p>
+						var http = require('http');
+					</p>
+					<p>
+						http.createServer(function (req, res) {
+					</p>
+					<p>
+						res.writeHead(200, {'Content-Type': 'text/html'});
+					</p>
+					<p>
+						res.write('Hello World!');
+					</p>
+					<p>
+						res.end();
+					</p>
+					<p>
+						}).listen(8080);
+					</p>
+				</div>
+				<p>
+					The first argument of the <span class="resaltado">res.writeHead()</span> method is the status code, 200 means that all is OK, the second argument is an object containing the response headers.
+				</p>
+			</div>
+		</article>
+
+		<article id=11>
+			<h2>Read the Query String</h2>
+			<div class="subpageContent">
+				<p>
+					The function passed into the <span class="resaltado">http.createServer()</span> <span class="resaltado">has</span> a req argument that represents the request from the client, as an object (http.IncomingMessage object).
+				</p>
+				<p>
+					This object has a property called "url" which holds the part of the url that comes after the domain name:
+				</p>
+				<p>
+					demo_http_url.js
+				</p>
+				<div class="code">
+					<p>var http = require('http');</p>
+					<p>http.createServer(function (req, res) {</p>
+					<p>res.writeHead(200, {'Content-Type': 'text/html'});</p>
+					<p>res.write(req.url);</p>
+					<p>res.end();</p>
+					<p>}).listen(8080);</p>
+				</div>
+				<p>
+					Save the code above in a file called "demo_http_url.js" and initiate the file:
+				</p>
+				<p>
+					Initiate demo_http_url.js:
+				</p>
+				<div class="code">
+					<p>C:\Users\Your Name>node demo_http_url.js</p>
+				</div>
+				<p>
+					If you have followed the same steps on your computer, you should see two different results when opening these two addresses:
+				</p>
+				<p>
+					<a href="http://localhost:8080">http://localhost:8080/summer</a>
+				</p>
+				<p>
+					Will produce this result:
+				</p>
+				<div class="code">
+					<p>/summer</p>
+				</div>
+			</div>
+		</article>
+
+	</section>
+
+	<footer>	
+		<article>
+			<h3>Website Developed by:</h3>
+			<ul>
+				<li>Francisco Javier Martínez Martínez</li>
+				<li>Antonio Carrasco García</li>
+			</ul>
+		</article>	
+		<article>
+			<p class="pfooter">This website is under a Creative Commons License</p>
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC page" target="_blank"><img src="./images/license.png" alt="Creative Commons license" /></a>
+		</article>
+		<article class="last">
+			<p class="pfooter">This website uses the following technologies</p>
+			<div>
+				<img src="./images/html5.svg" alt="HTML5  image" />
+				<img src="./images/css3.svg" alt="CSS3  image" />
+				<img src="./images/javaScript.svg" alt="JS  image" />
+				<img src="./images/bootstrap.svg" alt="Bootstrap image" />
+				<img src="./images/JQuery.svg" alt="Bootstrap image" />
+			</div>
+		</article>
+	</footer>
+
+</body>
+</html>

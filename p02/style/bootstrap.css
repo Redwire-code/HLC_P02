@@ -1,0 +1,159 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/*Cambiar tamaño aside*/ 
+.row.content {
+  height: 450px;
+}  
+
+.sidenav {
+  padding-top: 20px;
+  height: 100%;
+}    
+
+footer {
+  background-color: #222222;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  border-top: 3px solid #6ED098;
+}
+  
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+
+h1{
+  background-color: #5FCF75;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+h2{
+  background-color: #4DA75F;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.parrafoResaltado{
+  background-color: #6ED098;
+  color: back;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.temaAside{
+  border: 3px solid #6ED098;
+  border-radius: 5px;
+  background-color: #222222;
+}
+
+.temaSection{
+  background-color: #346549;
+  border: 3px solid #6ED098;
+  border-radius: 5px;
+}
+
+.resaltado{
+  color: #6ED098;
+}
+
+body{
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 5px 5px, 0px 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.footerdiv{
+  display: inline;
+  float: left;
+  margin-left: 5.2%;
+  margin-right: 5.2%;
+  text-align: left;
+  border-bottom: 1px solid #6ED098;
+}
+
+.temalinks{
+  color: #6ED098;
+  text-decoration: none;
+  text-align: left;
+}
+
+.temaimagen{
+  border-radius: 5px;
+  width: 100%;
+}
+
+table{
+  width: 100%;
+  align-self: center;
+  border: 2px solid black;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+table tr td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.td1{
+  background-color: #6ED098;
+}
+
+.td2{
+  background-color: #5FCF75;
+}
+
+.code{
+  margin-left: 25%;
+  text-align: left;
+  width: 50%;
+  color: white;
+  font-size: 0.96em;
+  padding: 3px;
+  background-color: #23272e;
+  border-radius: 6px;
+  border-left: 5px solid #459c69;
+}
+
+.rojoC{
+  color: #FF3333;
+}
+
+.moradoC{
+  color: #6D33FF;
+}
+
+.verdeC{
+  color: #5DFF33;
+}
+
+.amarilloC{
+  color: #FFFC33;
+}
+
+.azulC{
+  color: #33B6FF;
+}
+
+.naranjaC{
+  color: #FF8033;
+}

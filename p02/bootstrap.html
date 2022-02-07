@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">JLearn</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="./bootstrapt.html">Bootstrap Tutorial</a></li>
+        <li><a href="./index.html">Main page</a></li>
+        <li><a href="./javaScript.html">JavaScript</a></li>
+        <li><a href="./nodejs.html">Node js</a></li>
+        <li><a href="./jquery.html">JQuery</a></li>
+        <li><a href="./angular.html">AngularJS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  
+  <div class="row content">
+
+    <div class="col-sm-2 sidenav temaAside">
+      <ul>
+        <li class="temalinks"><a class="temalinks" href="#1">What is Bootstrap?</a></li>
+        <li class="temalinks"><a class="temalinks" href="#2">How bootstrap works?</a></li>
+        <li class="temalinks"><a class="temalinks" href="#3">What is the functionality of Bootstrap?</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-8 text-left temaSection"> 
+      <h1 id=1>What is Bootstrap?</h1>
+      <p class="parrafoResaltado">Bootstrap is a CSS framework developed by Twitter in 2010, to standardize the company's tools.
+
+        Initially, it was called Twitter Blueprint, and a little later, in 2011, it became open source and its name was changed to Bootstrap. Since then it has been updated several times and is now at version 4.4.
+
+        The framework combines CSS and JavaScript to style the elements of an HTML page. It allows much more than simply changing the color of buttons and links.
+
+        This is a tool that provides interactivity on the page, so it offers a series of components that facilitate communication with the user, such as navigation menus, page controls, progress bars and more.
+
+        In addition to all the features offered by the framework, its main objective is to allow the construction of responsive websites for mobile devices.
+
+        This means that the pages are designed to work on desktops, tablets and smartphones, in a very simple and organized way.</p>
+        
+        <h1 id=2>How bootstrap works?</h1>
+        <p class="parrafoResaltado">Bootstrap is made up of a series of CSS and JavaScript files responsible for assigning specific characteristics to page elements.
+
+        There is one main file called bootstrap.css, which contains a definition for all the styles used. Basically, the framework structure is made up of two directories:</p>
+        <ul class="parrafoResaltado">
+          <li>css - contains the necessary files for styling elements and an alternative to the original theme;</li>
+          <li>js: Contains the back part of the bootstrap.js file (original and minified), responsible for running style apps that require interactive manipulation.</li>
+        </ul>
+        <h1 id=3>What is the functionality of Bootstrap?</h1>
+        <p class="parrafoResaltado">Bootstrap offers a number of features that can be implemented on a website. Next we will talk about the possibilities of this tool.</p>
+        <h2>Responsive design</h2>
+        <p class="parrafoResaltado">One of the main features of Bootstrap is to allow the adaptation of the page to be done according to the type of device used. To ensure responsiveness, the framework works with:</p>
+        <ul class="parrafoResaltado">
+          <li>the styling of the < div> element;</li>
+          <li>the use of the container class.</li>
+        </ul>
+        <p class="parrafoResaltado">In practice, the < div> element works to create a series of notes, similar to a table, capable of adaptively structuring the page.
+
+        There was already an attempt to use tables to create responsive layouts, however there were limitations in defining the length of columns which made it impossible to use on smaller devices like smartphones.
+
+        The < div> element is more flexible, as it allows you to easily define and resize the length.
+
+        Bootstrap has assigned the < div> element a class container feature, which works to determine the appropriate dimensions for elements inserted into that space.
+
+        Basically, the framework works with three types of containers:</p>
+        <ul class="parrafoResaltado">
+          <li>Container: As an array with a max-width property, which determines what size fabric is ideal for creating the page layout.</li>
+          <li>Container-fluid: Consider the full length of the device fabric to define the layout. For this, the width property is considered 100% in all fabric size limits.</li>
+          <li>Container-{ breakpoint}: considera width 100% hasta alcanzar un cierto tamaño.</li>
+        </ul>
+    </div>
+
+    <div class="col-sm-2 sidenav temaAside">
+      <p class="parrafoResaltado">Tutorials:</p>
+      <div class="well">
+        <p><a href="https://www.w3schools.com/bootstrap4/"><img src="./images/ej3.jpg" class="temaimagen"/></a></p>
+      </div>
+      <div class="well">
+        <p><a href="https://www.w3schools.com/jquERy/default.asp"><img src="./images/ej4.png" class="temaimagen"/></a></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="container-fluid text-center resaltado">
+  <div class="footerdiv">
+    <p>Website Developed by:</p>
+    <p>Francisco Javier Martínez Martínez</p>
+    <p>Antonio Carrasco García</p>
+  </div>
+  <div class="footerdiv">
+    <p>This website is under a Creative Commons License</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC page" target="_blank"><img src="./images/license.png" alt="Creative Commons license" /></a>
+  </div>
+  <div class="footerdiv">
+    <p>This website uses the following technologies</p>
+    <img src="./images/html5.svg" alt="HTML5  image" />
+		<img src="./images/css3.svg" alt="CSS3  image" />
+		<img src="./images/javaScript.svg" alt="JS  image" />
+		<img src="./images/bootstrap.svg" alt="Bootstrap image" />
+		<img src="./images/JQuery.svg" alt="Bootstrap image" />
+  </div>
+</footer>
+
+</body>
+</html>
