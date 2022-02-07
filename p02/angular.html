@@ -11,8 +11,7 @@
 
 	<header>
 		<a href="./index.html" title="Return to main page"><img src="./images/home.png" alt="return to main page image"/></a>
-		<h1 id="MAIN">JLearn</h1>	
-			
+		<h1 id="Beginning">JLearn</h1>	
 		<h2>Angular</h2>
 	</header>
 
@@ -36,7 +35,7 @@
   		<input id="menu__button" type="checkbox" checked />
   		<a class="menu__item" href="./bootstrap.html">Bootstrap</a>
   		<a class="menu__item" href="./angular.html">AngularJS</a>
-  		<a class="menu__item" href="./express.html">Node.js</a>
+  		<a class="menu__item" href="./nodejs.html">Node.js</a>
   		<a class="menu__item" href="./JQuery.html">JQuery</a>
   		<a class="menu__item" href="./javaScript.html">JS</a>
   		<label class="menu__close" for="menu__button"></label>
@@ -60,6 +59,7 @@
 				</p>
 
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>	
 
 		<article id=2>
@@ -76,30 +76,31 @@
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< !DOCTYPE html> </p>
-					<p>< html> </p>
-					<p>< script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/<br/>angular.min.js">< /script></p>
-					<p>< body></p>
-					<p>< div ng-app=""></p>
-					<p>< p>My first expression: {{ 5 + 5 }}</p></p>
-					<p>< /div></p>
-					<p>< /body></p>
-					<p>< /html></p>
+					<p>< <span class="rojoC">!DOCTYPE</span> <span class="moradoC">html</span>> </p>
+					<p>< <span class="rojoC">html</span>> </p>
+					<p>< <span class="rojoC">script</span> <span class="verdeC">src</span>=<span class="amarilloC">"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/<br/>angular.min.js"</span>>< /<span class="rojoC">script</span>></p>
+					<p>< <span class="rojoC">body</span>></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>= <span class="amarilloC">""</span>></p>
+					<p>< <span class="rojoC">p</span>>My first expression: {{ 5 + 5 }}< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
+					<p>< /<span class="rojoC">body</span>></p>
+					<p>< /<span class="rojoC">html</span>></p>
 				</div>
 				<p>If you remove the ng-app directive, HTML will display the expression as it is, without solving it:</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< !DOCTYPE html></p>
-					<p>< html></p>
-					<p>< script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/<br/>angular.min.js">< /script></p>
-					<p>< body></p>
-					<p>< div></p>
-					<p>< p>My first expression: {{ 5 + 5 }}< /p></p>
-					<p>< /div></p>
-					<p>< /body></p>
-					<p>< /html></p>
+					<p>< <span class="rojoC">!DOCTYPE</span> <span class="moradoC">html</span>> </p>
+					<p>< <span class="rojoC">html</span>> </p>
+					<p>< <span class="rojoC">script</span> <span class="verdeC">src</span>=<span class="amarilloC">"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/<br/>angular.min.js"</span>>< /<span class="rojoC">script</span>></p>
+					<p>< <span class="rojoC">body</span>></p>
+					<p>< <span class="rojoC">div</span>></p>
+					<p>< <span class="rojoC">p</span>>My first expression: {{ 5 + 5 }}< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
+					<p>< /<span class="rojoC">body</span>></p>
+					<p>< /<span class="rojoC">html</span>></p>
 				</div>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=3>
@@ -110,21 +111,21 @@
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="quantity=1;cost=5"></p>
-					<p>< p>Total in dollar: {{ quantity * cost }}< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"" </span><span class="verdeC">ng-init</span>=<span class="amarilloC">"quantity=1;cost=5"</span>></p>
+					<p>< <span class="rojoC">p</span>>Total in dollar: {{ quantity * cost }}< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 				<p>
 					Same example using <span class="resaltado">ng-bind:</span>
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="quantity=1;cost=5"></p>
-					<p>< p>Total in dollar: < span ng-bind="quantity * cost">< /span>< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"" </span><span class="verdeC">ng-init</span>=<span class="amarilloC">"quantity=1;cost=5"</span>></p>
+					<p>< <span class="rojoC">p</span>>Total in dollar: < <span class="rojoC">span</span> <span class="verdeC">ng-bind</span>=<span class="amarilloC">"quantity * cost"</span>>< /<span class="rojoC">span</span>>< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 			</div>
-
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=4>
@@ -135,20 +136,21 @@
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="firstName='John';lastName='Doe'"></p>
-					<p>< p>The name is {{ firstName + " " + lastName }}< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"" </span><span class="verdeC">ng-init</span>=<span class="amarilloC">"firstName='John';lastName='Doe'"</span>></p>
+					<p>< <span class="rojoC">p</span>>The name is {{ firstName + " " + lastName }}< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 				<p>
 					Same example using <span class="resaltado">ng-bind:</span>
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="firstName='John';lastName='Doe'"></p>
-					<p>< p>The name is < span ng-bind="firstName + ' ' + lastName">< /span>< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"" </span><span class="verdeC">ng-init</span>=<span class="amarilloC">"firstName='John';lastName='Doe'"</span>></p>
+					<p>< <span class="rojoC">p</span>>The name is < <span class="rojoC">span</span> <span class="verdeC">ng-bind</span>=<span class="amarilloC">"firstName + ' ' + lastName"</span>>< /<span class="rojoC">span</span>>< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=5>
@@ -159,20 +161,21 @@
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="person={firstName:'John'<br/>,lastName:'Doe'}"></p>
-					<p>< p>The name is {{ person.lastName }}< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"" </span><span class="verdeC">ng-init</span>=<span class="amarilloC">"person={firstName:'John'<br/>,lastName:'Doe'}"</span>></p>
+					<p>< <span class="rojoC">p</span>>The name is {{ person.lastName }}< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 				<p>
 					Same example using <span class="resaltado">ng-bind:</span>
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="person={firstName:'John'<br/>,lastName:'Doe'}"></p>
-					<p>< p>The name is < span ng-bind="person.lastName">< /span>< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"" </span><span class="verdeC">ng-init</span>=<span class="amarilloC">"person={firstName:'John'<br/>,lastName:'Doe'}"</span>></p>
+					<p>< <span class="rojoC">p</span>>The name is < <span class="rojoC">span</span> <span class="verdeC">ng-bind</span>=<span class="amarilloC">"person.lastName"</span>>< /<span class="rojoC">span</span>>< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=6>
@@ -183,20 +186,21 @@
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="points=[1,15,19,2,40]"></p>
-					<p>< p>The third result is {{ points[2] }}< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">""</span> <span class="verdeC">ng-init</span>=<span class="amarilloC">"points=[1,15,19,2,40]"</span>></p>
+					<p>< <span class="rojoC">p</span>>The third result is {{ points[2] }}< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 				<p>
 					Same example using <span class="resaltado">ng-bind:</span>
 				</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="" ng-init="points=[1,15,19,2,40]"></p>
-					<p>< p>The third result is < span ng-bind="points[2]">< /span>< /p></p>
-					<p>< /div></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">""</span> <span class="verdeC">ng-init</span>=<span class="amarilloC">"points=[1,15,19,2,40]"</span>></p>
+					<p>< <span class="rojoC">p</span>>The third result is < <span class="rojoC">span</span> <span class="verdeC">ng-bind</span>=<span class="amarilloC">"points[2]"</span>>< /<span class="rojoC">span</span>>< /<span class="rojoC">p</span>></p>
+					<p>< /<span class="rojoC">div</span>></p>
 				</div>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=7>
@@ -208,6 +212,7 @@
 				<p>AngularJS expressions support filters, while JavaScript expressions do not.</p>
 				<p>Learn about JavaScript in our JavaScript Tutorial.</p>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=8>
@@ -218,6 +223,7 @@
 				<p>The module is a container for the application controllers.</p>
 				<p>Controllers always belong to a module.</p>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=9>
@@ -226,10 +232,10 @@
 				<p>A module is created by using the AngularJS function <span class="resaltado">angular.module</span></p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="myApp">...< /div></p>
-					<p>< script></p>
-					<p>var app = angular.module("myApp", []);</p>
-					<p>< /script></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"myApp"</span>>...< /<span class="rojoC">div</span>></p>
+					<p>< <span class="rojoC">script</span>></p>
+					<p><span class="azulC">var</span> app <span class="rojoC">=</span> angular.<span class="azulC">module</span>(<span class="amarilloC">"myApp"</span>, []);</p>
+					<p>< /<span class="rojoC">script</span>></p>
 				</div>
 				<p>
 					The "myApp" parameter refers to an HTML element in which the application will run.
@@ -238,6 +244,7 @@
 					Now you can add controllers, directives, filters, and more, to your AngularJS application.
 				</p>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 		<article id=10>
@@ -246,18 +253,19 @@
 				<p>Add a controller to your application, and refer to the controller with the <span class="resaltado">ng-controller</span> directive:</p>
 				<h3>Example:</h3>
 				<div class="code">
-					<p>< div ng-app="myApp" ng-controller="myCtrl"></p>
+					<p>< <span class="rojoC">div</span> <span class="verdeC">ng-app</span>=<span class="amarilloC">"myApp" </span><span class="verdeC">ng-controller</span>=<span class="amarilloC">"myCtrl"</span>></p>
 					<p>{{ firstName + " " + lastName }}</p>
-					<p>< /div></p>
-					<p>< script></p>
-					<p>var app = angular.module("myApp", []);</p>
-					<p>app.controller("myCtrl", function($scope) {</p>
-					<p>$scope.firstName = "John";</p>
-					<p>$scope.lastName = "Doe";</p>
+					<p>< /<span class="rojoC">div</span>></p>
+					<p>< <span class="rojoC">script</span>></p>
+					<p><span class="azulC">var</span> app <span class="rojoC">=</span> angular.<span class="azulC">module</span>(<span class="amarilloC">"myApp"</span>, []);</p>
+					<p>app.<span class="azulC">controller</span>(<span class="amarilloC">"myCtrl"</span>, <span class="azulC">function</span>(<span class="naranjaC">$scope</span>) {</p>
+					<p>$scope.firstName <span class="rojoC">= </span> <span class="amarilloC">"John"</span>;</p>
+					<p>$scope.lastName <span class="rojoC">= </span> <span class="amarilloC">"Doe"</span>;</p>
 					<p>});</p>
-					<p>< /script></p>
+					<p>< /<span class="rojoC">script</span>></p>
 				</div>
 			</div>
+			<button class="upButton"><a href="#Beginning" title="GO UP"><img src="./images/up.png" alt="Go Up button" /></a></button>
 		</article>
 
 	</section>
