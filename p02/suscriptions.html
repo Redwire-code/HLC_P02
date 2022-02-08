@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./style/style.css">
 	<link rel="stylesheet" href="./style/index.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-	<script src="./js/formController.js"></script>
+	
 </head>
 <body>
 
@@ -31,17 +31,26 @@
 	</nav>
 
 	<section>
-			<form  enctype="multipart/form-data" method="POST">
+			<form  enctype="multipart/form-data" method="POST" id="formc">
+
 				<fieldset >
+
 					<legend>Log in information</legend>
-					<label for="name">Username</label><br/>
+
+					<label for="name">Username</label>
+
+					<br/>
 					<input type="text" name="nombre" size="25" id="name"/><br/><br/>
+
 					<label for="mail"> Email </label><br/>
 					<input type="text" size="25" name="correo" id="mail"/><br/><br/>
+
 					<label for="passwd"> Password </label><br/>
 					<input type="password" maxlength="15" name="psswd" size="12" id="passwd"/><br/><br/>
+
 					<label for="pass2"> Repeat Password</label><br/>
 					<input type="password" size="12" maxlength="15" name="psswd" id="pass2"/><br/>
+
 					<p>FrontEnd or BackEnd?</p>
 					<label for="Sega">FrontEnd</label><input type="radio" checked="checked"  name="opcion"  id="Sega"/><br/>
 					<label for="Nintendo">BackEnd&nbsp;</label><input type="radio" name="opcion" id="Nintendo"/><br/><br/>
@@ -64,7 +73,8 @@
 				</fieldset>
 
 				<div class="buttonsCenter">
-					<input type="submit"  id="apply"value="Apply and save changes"/> 
+					<button id="apply">Apply and save changes</button>
+					<script src="./js/formController.js"></script>
 					<input type="reset" value="Delete introduced data "/>
 				</div>
 			</form>
